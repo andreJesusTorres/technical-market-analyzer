@@ -1,0 +1,3612 @@
+('/Users/andretorres/Library/Mobile '
+ 'Documents/com~apple~CloudDocs/Students/Carlos Financial/build/main/main.pkg',
+ {'BINARY': True,
+  'DATA': True,
+  'EXECUTABLE': True,
+  'EXTENSION': True,
+  'PYMODULE': True,
+  'PYSOURCE': True,
+  'PYZ': False,
+  'SPLASH': True,
+  'SYMLINK': False},
+ [('pyi-contents-directory _internal', '', 'OPTION'),
+  ('PYZ-00.pyz',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/build/main/PYZ-00.pyz',
+   'PYZ'),
+  ('lib-dynload/_struct.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_struct.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/zlib.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/zlib.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('struct',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/build/main/localpycs/struct.pyc',
+   'PYMODULE'),
+  ('pyimod01_archive',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/build/main/localpycs/pyimod01_archive.pyc',
+   'PYMODULE'),
+  ('pyimod02_importers',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/build/main/localpycs/pyimod02_importers.pyc',
+   'PYMODULE'),
+  ('pyimod03_ctypes',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/build/main/localpycs/pyimod03_ctypes.pyc',
+   'PYMODULE'),
+  ('pyiboot01_bootstrap',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/PyInstaller/loader/pyiboot01_bootstrap.py',
+   'PYSOURCE'),
+  ('pyi_rth_inspect',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/PyInstaller/hooks/rthooks/pyi_rth_inspect.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgutil',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/PyInstaller/hooks/rthooks/pyi_rth_pkgutil.py',
+   'PYSOURCE'),
+  ('pyi_rth_multiprocessing',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/PyInstaller/hooks/rthooks/pyi_rth_multiprocessing.py',
+   'PYSOURCE'),
+  ('pyi_rth_pkgres',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/PyInstaller/hooks/rthooks/pyi_rth_pkgres.py',
+   'PYSOURCE'),
+  ('main',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos Financial/main.py',
+   'PYSOURCE'),
+  ('Python3.framework/Versions/3.9/Python3',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Python3',
+   'BINARY'),
+  ('lib-dynload/_pickle.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_pickle.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/binascii.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/binascii.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/resource.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/resource.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/grp.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/grp.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_lzma.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_lzma.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_bz2.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_bz2.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/unicodedata.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/unicodedata.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/array.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/array.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/select.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/select.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/math.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/math.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_socket.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_socket.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_statistics.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_statistics.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_contextvars.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_contextvars.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_decimal.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_decimal.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_hashlib.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_hashlib.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_sha3.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_sha3.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_blake2.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_blake2.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_sha256.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_sha256.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_md5.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_md5.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_sha1.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_sha1.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_sha512.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_sha512.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_random.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_random.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_bisect.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_bisect.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_ctypes.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_ctypes.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_uuid.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_uuid.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_ssl.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_ssl.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/termios.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/termios.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_csv.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_csv.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/readline.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/readline.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_opcode.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_opcode.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_scproxy.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_scproxy.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/pyexpat.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/pyexpat.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_posixshmem.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_posixshmem.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_multiprocessing.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_multiprocessing.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_posixsubprocess.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_posixsubprocess.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/mmap.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/mmap.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_queue.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_queue.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_heapq.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_heapq.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_multibytecodec.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_multibytecodec.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_codecs_jp.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_codecs_jp.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_codecs_kr.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_codecs_kr.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_codecs_iso2022.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_codecs_iso2022.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_codecs_cn.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_codecs_cn.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_codecs_tw.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_codecs_tw.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_codecs_hk.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_codecs_hk.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_datetime.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_datetime.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_elementtree.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_elementtree.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('numpy/_core/_multiarray_tests.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/numpy/_core/_multiarray_tests.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('numpy/_core/_multiarray_umath.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/numpy/_core/_multiarray_umath.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('charset_normalizer/md__mypyc.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/charset_normalizer/md__mypyc.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('charset_normalizer/md.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/charset_normalizer/md.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_json.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_json.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('numpy/linalg/_umath_linalg.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/numpy/linalg/_umath_linalg.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_asyncio.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_asyncio.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('numpy/random/mtrand.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/numpy/random/mtrand.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('numpy/random/_sfc64.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/numpy/random/_sfc64.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('numpy/random/_philox.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/numpy/random/_philox.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('numpy/random/_pcg64.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/numpy/random/_pcg64.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('numpy/random/_mt19937.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/numpy/random/_mt19937.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('numpy/random/bit_generator.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/numpy/random/bit_generator.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('numpy/random/_generator.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/numpy/random/_generator.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('numpy/random/_bounded_integers.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/numpy/random/_bounded_integers.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('numpy/random/_common.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/numpy/random/_common.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('numpy/fft/_pocketfft_umath.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/numpy/fft/_pocketfft_umath.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/cmath.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/cmath.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/writers.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/writers.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/window/indexers.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/window/indexers.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/window/aggregations.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/window/aggregations.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/tslibs/vectorized.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/tslibs/vectorized.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/tslibs/tzconversion.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/tslibs/tzconversion.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/tslibs/timezones.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/tslibs/timezones.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/tslibs/timestamps.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/tslibs/timestamps.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/tslibs/timedeltas.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/tslibs/timedeltas.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/tslibs/strptime.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/tslibs/strptime.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/tslibs/period.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/tslibs/period.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/tslibs/parsing.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/tslibs/parsing.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/tslibs/offsets.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/tslibs/offsets.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/tslibs/np_datetime.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/tslibs/np_datetime.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/tslibs/nattype.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/tslibs/nattype.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/tslibs/fields.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/tslibs/fields.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/tslibs/dtypes.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/tslibs/dtypes.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/tslibs/conversion.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/tslibs/conversion.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/tslibs/ccalendar.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/tslibs/ccalendar.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/tslibs/base.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/tslibs/base.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/tslib.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/tslib.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/testing.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/testing.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/sparse.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/sparse.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/sas.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/sas.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/reshape.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/reshape.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/properties.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/properties.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/parsers.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/parsers.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/pandas_parser.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/pandas_parser.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/pandas_datetime.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/pandas_datetime.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/ops_dispatch.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/ops_dispatch.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/ops.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/ops.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/missing.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/missing.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/lib.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/lib.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/json.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/json.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/join.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/join.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/interval.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/interval.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/internals.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/internals.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/indexing.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/indexing.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/index.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/index.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/hashtable.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/hashtable.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/hashing.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/hashing.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/groupby.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/groupby.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/byteswap.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/byteswap.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/arrays.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/arrays.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('pandas/_libs/algos.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/_libs/algos.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('lib-dynload/_sqlite3.cpython-39-darwin.so',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/lib/python3.9/lib-dynload/_sqlite3.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('frozendict/_frozendict.cpython-39-darwin.so',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/frozendict/_frozendict.cpython-39-darwin.so',
+   'EXTENSION'),
+  ('resultados.xlsx',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos Financial/resultados.xlsx',
+   'DATA'),
+  ('pandas/io/formats/templates/html_style.tpl',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/io/formats/templates/html_style.tpl',
+   'DATA'),
+  ('pandas/io/formats/templates/html.tpl',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/io/formats/templates/html.tpl',
+   'DATA'),
+  ('pandas/io/formats/templates/html_table.tpl',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/io/formats/templates/html_table.tpl',
+   'DATA'),
+  ('pandas/io/formats/templates/string.tpl',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/io/formats/templates/string.tpl',
+   'DATA'),
+  ('pandas/io/formats/templates/latex.tpl',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/io/formats/templates/latex.tpl',
+   'DATA'),
+  ('pandas/io/formats/templates/latex_longtable.tpl',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/io/formats/templates/latex_longtable.tpl',
+   'DATA'),
+  ('pandas/io/formats/templates/latex_table.tpl',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pandas/io/formats/templates/latex_table.tpl',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Prague',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Prague',
+   'DATA'),
+  ('pytz/zoneinfo/US/Mountain',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/US/Mountain',
+   'DATA'),
+  ('pytz/zoneinfo/America/Argentina/Jujuy',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Argentina/Jujuy',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Juba',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Juba',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Volgograd',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Volgograd',
+   'DATA'),
+  ('pytz/zoneinfo/America/Menominee',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Menominee',
+   'DATA'),
+  ('pytz/zoneinfo/America/Resolute',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Resolute',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Jakarta',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Jakarta',
+   'DATA'),
+  ('pytz/zoneinfo/Zulu',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Zulu',
+   'DATA'),
+  ('pytz/zoneinfo/America/Dawson',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Dawson',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Accra',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Accra',
+   'DATA'),
+  ('pytz/zoneinfo/CET',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/CET',
+   'DATA'),
+  ('pytz/zoneinfo/Canada/Mountain',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Canada/Mountain',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Srednekolymsk',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Srednekolymsk',
+   'DATA'),
+  ('pytz/zoneinfo/PRC',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/PRC',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Beirut',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Beirut',
+   'DATA'),
+  ('pytz/zoneinfo/America/Paramaribo',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Paramaribo',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Dubai',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Dubai',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Mogadishu',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Mogadishu',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Busingen',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Busingen',
+   'DATA'),
+  ('pytz/zoneinfo/America/Chihuahua',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Chihuahua',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Copenhagen',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Copenhagen',
+   'DATA'),
+  ('pytz/zoneinfo/America/Anchorage',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Anchorage',
+   'DATA'),
+  ('pytz/zoneinfo/America/Dawson_Creek',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Dawson_Creek',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Bissau',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Bissau',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT-8',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT-8',
+   'DATA'),
+  ('pytz/zoneinfo/EST',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/EST',
+   'DATA'),
+  ('pytz/zoneinfo/America/Cayenne',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Cayenne',
+   'DATA'),
+  ('pytz/zoneinfo/America/Argentina/ComodRivadavia',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Argentina/ComodRivadavia',
+   'DATA'),
+  ('pytz/zoneinfo/Hongkong',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Hongkong',
+   'DATA'),
+  ('pytz/zoneinfo/Chile/Continental',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Chile/Continental',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Hovd',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Hovd',
+   'DATA'),
+  ('pytz/zoneinfo/America/Toronto',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Toronto',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/Zulu',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/Zulu',
+   'DATA'),
+  ('pytz/zoneinfo/America/Ciudad_Juarez',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Ciudad_Juarez',
+   'DATA'),
+  ('pytz/zoneinfo/America/Chicago',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Chicago',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Truk',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Truk',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Kuwait',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Kuwait',
+   'DATA'),
+  ('pytz/zoneinfo/Indian/Maldives',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Indian/Maldives',
+   'DATA'),
+  ('pytz/zoneinfo/America/La_Paz',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/La_Paz',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Niue',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Niue',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Norfolk',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Norfolk',
+   'DATA'),
+  ('pytz/zoneinfo/America/Kralendijk',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Kralendijk',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Nouakchott',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Nouakchott',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Phnom_Penh',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Phnom_Penh',
+   'DATA'),
+  ('pytz/zoneinfo/MST',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/MST',
+   'DATA'),
+  ('pytz/zoneinfo/America/St_Barthelemy',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/St_Barthelemy',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Kanton',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Kanton',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/Lindeman',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/Lindeman',
+   'DATA'),
+  ('pytz/zoneinfo/America/Caracas',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Caracas',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Lisbon',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Lisbon',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Maputo',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Maputo',
+   'DATA'),
+  ('pytz/zoneinfo/America/Boa_Vista',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Boa_Vista',
+   'DATA'),
+  ('pytz/zoneinfo/America/Virgin',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Virgin',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Banjul',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Banjul',
+   'DATA'),
+  ('pytz/zoneinfo/America/Argentina/Cordoba',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Argentina/Cordoba',
+   'DATA'),
+  ('pytz/zoneinfo/America/Matamoros',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Matamoros',
+   'DATA'),
+  ('pytz/zoneinfo/America/Indiana/Knox',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Indiana/Knox',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Atyrau',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Atyrau',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Funafuti',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Funafuti',
+   'DATA'),
+  ('pytz/zoneinfo/America/New_York',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/New_York',
+   'DATA'),
+  ('pytz/zoneinfo/America/Merida',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Merida',
+   'DATA'),
+  ('pytz/zoneinfo/Antarctica/Syowa',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Antarctica/Syowa',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Dakar',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Dakar',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Windhoek',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Windhoek',
+   'DATA'),
+  ('pytz/zoneinfo/America/Ojinaga',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Ojinaga',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Pitcairn',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Pitcairn',
+   'DATA'),
+  ('pytz/zoneinfo/America/Indiana/Marengo',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Indiana/Marengo',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Ndjamena',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Ndjamena',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Luanda',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Luanda',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Saipan',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Saipan',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/West',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/West',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Amman',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Amman',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Novosibirsk',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Novosibirsk',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT+2',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT+2',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Chuuk',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Chuuk',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Bujumbura',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Bujumbura',
+   'DATA'),
+  ('pytz/zoneinfo/US/East-Indiana',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/US/East-Indiana',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Enderbury',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Enderbury',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Asmara',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Asmara',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Saigon',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Saigon',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Harbin',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Harbin',
+   'DATA'),
+  ('pytz/zoneinfo/America/Tijuana',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Tijuana',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Yap',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Yap',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Tomsk',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Tomsk',
+   'DATA'),
+  ('pytz/zoneinfo/America/Managua',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Managua',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/Darwin',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/Darwin',
+   'DATA'),
+  ('pytz/zoneinfo/America/Swift_Current',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Swift_Current',
+   'DATA'),
+  ('pytz/zoneinfo/America/Indiana/Indianapolis',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Indiana/Indianapolis',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Brunei',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Brunei',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Fiji',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Fiji',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Seoul',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Seoul',
+   'DATA'),
+  ('pytz/zoneinfo/America/Ensenada',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Ensenada',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Qatar',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Qatar',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Paris',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Paris',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT-9',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT-9',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/Lord_Howe',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/Lord_Howe',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Belgrade',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Belgrade',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Kigali',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Kigali',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Dili',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Dili',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Yekaterinburg',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Yekaterinburg',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Pontianak',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Pontianak',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Brussels',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Brussels',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Fakaofo',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Fakaofo',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Ljubljana',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Ljubljana',
+   'DATA'),
+  ('pytz/zoneinfo/America/Lower_Princes',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Lower_Princes',
+   'DATA'),
+  ('pytz/zoneinfo/Indian/Reunion',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Indian/Reunion',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Dushanbe',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Dushanbe',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Shanghai',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Shanghai',
+   'DATA'),
+  ('pytz/zoneinfo/Chile/EasterIsland',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Chile/EasterIsland',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/Victoria',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/Victoria',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Zagreb',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Zagreb',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Lusaka',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Lusaka',
+   'DATA'),
+  ('pytz/zoneinfo/Brazil/East',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Brazil/East',
+   'DATA'),
+  ('pytz/zoneinfo/America/Danmarkshavn',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Danmarkshavn',
+   'DATA'),
+  ('pytz/zoneinfo/Indian/Christmas',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Indian/Christmas',
+   'DATA'),
+  ('pytz/zoneinfo/US/Michigan',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/US/Michigan',
+   'DATA'),
+  ('pytz/zoneinfo/America/Maceio',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Maceio',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT-13',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT-13',
+   'DATA'),
+  ('pytz/zoneinfo/America/Montevideo',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Montevideo',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Moscow',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Moscow',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Tunis',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Tunis',
+   'DATA'),
+  ('pytz/zoneinfo/America/Barbados',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Barbados',
+   'DATA'),
+  ('pytz/zoneinfo/America/Guyana',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Guyana',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Choibalsan',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Choibalsan',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Kirov',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Kirov',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Sofia',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Sofia',
+   'DATA'),
+  ('pytz/zoneinfo/US/Eastern',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/US/Eastern',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Tirane',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Tirane',
+   'DATA'),
+  ('pytz/zoneinfo/America/Vancouver',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Vancouver',
+   'DATA'),
+  ('pytz/zoneinfo/Indian/Antananarivo',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Indian/Antananarivo',
+   'DATA'),
+  ('pytz/zoneinfo/America/Aruba',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Aruba',
+   'DATA'),
+  ('pytz/zoneinfo/America/Cuiaba',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Cuiaba',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Vaduz',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Vaduz',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Kosrae',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Kosrae',
+   'DATA'),
+  ('pytz/zoneinfo/Indian/Kerguelen',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Indian/Kerguelen',
+   'DATA'),
+  ('pytz/zoneinfo/America/Regina',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Regina',
+   'DATA'),
+  ('pytz/zoneinfo/America/Inuvik',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Inuvik',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Palau',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Palau',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Dublin',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Dublin',
+   'DATA'),
+  ('pytz/zoneinfo/America/Grenada',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Grenada',
+   'DATA'),
+  ('pytz/zoneinfo/leapseconds',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/leapseconds',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/Broken_Hill',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/Broken_Hill',
+   'DATA'),
+  ('pytz/zoneinfo/US/Pacific',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/US/Pacific',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Ujung_Pandang',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Ujung_Pandang',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Mariehamn',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Mariehamn',
+   'DATA'),
+  ('pytz/zoneinfo/America/Cancun',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Cancun',
+   'DATA'),
+  ('pytz/zoneinfo/America/St_Thomas',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/St_Thomas',
+   'DATA'),
+  ('pytz/zoneinfo/Portugal',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Portugal',
+   'DATA'),
+  ('pytz/zoneinfo/US/Hawaii',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/US/Hawaii',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Chatham',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Chatham',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/London',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/London',
+   'DATA'),
+  ('pytz/zoneinfo/America/Argentina/La_Rioja',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Argentina/La_Rioja',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/Yancowinna',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/Yancowinna',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Stockholm',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Stockholm',
+   'DATA'),
+  ('pytz/zoneinfo/ROK',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/ROK',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Vienna',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Vienna',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Karachi',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Karachi',
+   'DATA'),
+  ('pytz/zoneinfo/America/St_Vincent',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/St_Vincent',
+   'DATA'),
+  ('pytz/zoneinfo/Canada/Pacific',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Canada/Pacific',
+   'DATA'),
+  ('pytz/zoneinfo/Antarctica/Macquarie',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Antarctica/Macquarie',
+   'DATA'),
+  ('pytz/zoneinfo/America/North_Dakota/New_Salem',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/North_Dakota/New_Salem',
+   'DATA'),
+  ('pytz/zoneinfo/zonenow.tab',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/zonenow.tab',
+   'DATA'),
+  ('pytz/zoneinfo/America/Bahia_Banderas',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Bahia_Banderas',
+   'DATA'),
+  ('pytz/zoneinfo/GMT-0',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/GMT-0',
+   'DATA'),
+  ('pytz/zoneinfo/Indian/Mahe',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Indian/Mahe',
+   'DATA'),
+  ('pytz/zoneinfo/MST7MDT',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/MST7MDT',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Omsk',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Omsk',
+   'DATA'),
+  ('pytz/zoneinfo/America/Anguilla',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Anguilla',
+   'DATA'),
+  ('pytz/zoneinfo/America/Santiago',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Santiago',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Aqtau',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Aqtau',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Samarkand',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Samarkand',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Manila',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Manila',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Qyzylorda',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Qyzylorda',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Mbabane',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Mbabane',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Douala',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Douala',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Apia',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Apia',
+   'DATA'),
+  ('pytz/zoneinfo/Indian/Cocos',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Indian/Cocos',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Johannesburg',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Johannesburg',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT-7',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT-7',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT+7',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT+7',
+   'DATA'),
+  ('pytz/zoneinfo/America/Port_of_Spain',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Port_of_Spain',
+   'DATA'),
+  ('pytz/zoneinfo/America/Shiprock',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Shiprock',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Guam',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Guam',
+   'DATA'),
+  ('pytz/zoneinfo/Turkey',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Turkey',
+   'DATA'),
+  ('pytz/zoneinfo/America/Guatemala',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Guatemala',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT-14',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT-14',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Thimbu',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Thimbu',
+   'DATA'),
+  ('pytz/zoneinfo/Singapore',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Singapore',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT-0',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT-0',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Gibraltar',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Gibraltar',
+   'DATA'),
+  ('pytz/zoneinfo/America/Puerto_Rico',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Puerto_Rico',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Jerusalem',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Jerusalem',
+   'DATA'),
+  ('pytz/zoneinfo/Mexico/BajaNorte',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Mexico/BajaNorte',
+   'DATA'),
+  ('pytz/zoneinfo/America/Rankin_Inlet',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Rankin_Inlet',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT+4',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT+4',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Kamchatka',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Kamchatka',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT+1',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT+1',
+   'DATA'),
+  ('pytz/zoneinfo/America/Montreal',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Montreal',
+   'DATA'),
+  ('pytz/zoneinfo/America/Mexico_City',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Mexico_City',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Tbilisi',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Tbilisi',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Niamey',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Niamey',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Aden',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Aden',
+   'DATA'),
+  ('pytz/zoneinfo/Canada/Yukon',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Canada/Yukon',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Kampala',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Kampala',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/UCT',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/UCT',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Baku',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Baku',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Chongqing',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Chongqing',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/UTC',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/UTC',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Vientiane',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Vientiane',
+   'DATA'),
+  ('pytz/zoneinfo/GB',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/GB',
+   'DATA'),
+  ('pytz/zoneinfo/America/Nuuk',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Nuuk',
+   'DATA'),
+  ('pytz/zoneinfo/America/Indiana/Petersburg',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Indiana/Petersburg',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Bougainville',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Bougainville',
+   'DATA'),
+  ('pytz/zoneinfo/America/Argentina/Tucuman',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Argentina/Tucuman',
+   'DATA'),
+  ('pytz/zoneinfo/Canada/Saskatchewan',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Canada/Saskatchewan',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Bratislava',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Bratislava',
+   'DATA'),
+  ('pytz/zoneinfo/America/Porto_Acre',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Porto_Acre',
+   'DATA'),
+  ('pytz/zoneinfo/America/Mendoza',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Mendoza',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Oslo',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Oslo',
+   'DATA'),
+  ('pytz/zoneinfo/America/Santo_Domingo',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Santo_Domingo',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Porto-Novo',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Porto-Novo',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Kinshasa',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Kinshasa',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Chungking',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Chungking',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Riyadh',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Riyadh',
+   'DATA'),
+  ('pytz/zoneinfo/America/Cambridge_Bay',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Cambridge_Bay',
+   'DATA'),
+  ('pytz/zoneinfo/US/Samoa',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/US/Samoa',
+   'DATA'),
+  ('pytz/zoneinfo/America/Lima',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Lima',
+   'DATA'),
+  ('pytz/zoneinfo/America/El_Salvador',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/El_Salvador',
+   'DATA'),
+  ('pytz/zoneinfo/America/Rosario',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Rosario',
+   'DATA'),
+  ('pytz/zoneinfo/America/Louisville',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Louisville',
+   'DATA'),
+  ('pytz/zoneinfo/America/Glace_Bay',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Glace_Bay',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Chisinau',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Chisinau',
+   'DATA'),
+  ('pytz/zoneinfo/America/Marigot',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Marigot',
+   'DATA'),
+  ('pytz/zoneinfo/Atlantic/Cape_Verde',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Atlantic/Cape_Verde',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Warsaw',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Warsaw',
+   'DATA'),
+  ('pytz/zoneinfo/America/Punta_Arenas',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Punta_Arenas',
+   'DATA'),
+  ('pytz/zoneinfo/America/Argentina/San_Juan',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Argentina/San_Juan',
+   'DATA'),
+  ('pytz/zoneinfo/America/Atikokan',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Atikokan',
+   'DATA'),
+  ('pytz/zoneinfo/zone1970.tab',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/zone1970.tab',
+   'DATA'),
+  ('pytz/zoneinfo/EET',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/EET',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Colombo',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Colombo',
+   'DATA'),
+  ('pytz/zoneinfo/Antarctica/Vostok',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Antarctica/Vostok',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Khartoum',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Khartoum',
+   'DATA'),
+  ('pytz/zoneinfo/America/Havana',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Havana',
+   'DATA'),
+  ('pytz/zoneinfo/America/Winnipeg',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Winnipeg',
+   'DATA'),
+  ('pytz/zoneinfo/Canada/Central',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Canada/Central',
+   'DATA'),
+  ('pytz/zoneinfo/America/Manaus',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Manaus',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Katmandu',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Katmandu',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT+6',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT+6',
+   'DATA'),
+  ('pytz/zoneinfo/America/Indiana/Tell_City',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Indiana/Tell_City',
+   'DATA'),
+  ('pytz/zoneinfo/Indian/Mayotte',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Indian/Mayotte',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/Queensland',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/Queensland',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Ulyanovsk',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Ulyanovsk',
+   'DATA'),
+  ('pytz/zoneinfo/US/Alaska',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/US/Alaska',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/Sydney',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/Sydney',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT-11',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT-11',
+   'DATA'),
+  ('pytz/zoneinfo/WET',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/WET',
+   'DATA'),
+  ('pytz/zoneinfo/America/Kentucky/Monticello',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Kentucky/Monticello',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/South',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/South',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Berlin',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Berlin',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT+9',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT+9',
+   'DATA'),
+  ('pytz/zoneinfo/ROC',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/ROC',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Famagusta',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Famagusta',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Brazzaville',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Brazzaville',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Ponape',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Ponape',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Amsterdam',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Amsterdam',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Istanbul',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Istanbul',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Bamako',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Bamako',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Ho_Chi_Minh',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Ho_Chi_Minh',
+   'DATA'),
+  ('pytz/zoneinfo/America/Detroit',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Detroit',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Pohnpei',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Pohnpei',
+   'DATA'),
+  ('pytz/zoneinfo/Iran',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Iran',
+   'DATA'),
+  ('pytz/zoneinfo/America/Belem',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Belem',
+   'DATA'),
+  ('pytz/zoneinfo/America/Atka',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Atka',
+   'DATA'),
+  ('pytz/zoneinfo/America/Cordoba',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Cordoba',
+   'DATA'),
+  ('pytz/zoneinfo/Atlantic/Reykjavik',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Atlantic/Reykjavik',
+   'DATA'),
+  ('pytz/zoneinfo/Atlantic/Azores',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Atlantic/Azores',
+   'DATA'),
+  ('pytz/zoneinfo/Atlantic/Canary',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Atlantic/Canary',
+   'DATA'),
+  ('pytz/zoneinfo/America/North_Dakota/Beulah',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/North_Dakota/Beulah',
+   'DATA'),
+  ('pytz/zoneinfo/MET',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/MET',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Taipei',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Taipei',
+   'DATA'),
+  ('pytz/zoneinfo/America/Martinique',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Martinique',
+   'DATA'),
+  ('pytz/zoneinfo/America/Juneau',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Juneau',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Rarotonga',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Rarotonga',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Tehran',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Tehran',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/Universal',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/Universal',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/Currie',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/Currie',
+   'DATA'),
+  ('pytz/zoneinfo/America/Panama',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Panama',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Kuala_Lumpur',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Kuala_Lumpur',
+   'DATA'),
+  ('pytz/zoneinfo/America/Metlakatla',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Metlakatla',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Calcutta',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Calcutta',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Oral',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Oral',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Gaza',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Gaza',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Qostanay',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Qostanay',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Nicosia',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Nicosia',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Athens',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Athens',
+   'DATA'),
+  ('pytz/zoneinfo/America/Coral_Harbour',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Coral_Harbour',
+   'DATA'),
+  ('pytz/zoneinfo/America/North_Dakota/Center',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/North_Dakota/Center',
+   'DATA'),
+  ('pytz/zoneinfo/Atlantic/South_Georgia',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Atlantic/South_Georgia',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Nauru',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Nauru',
+   'DATA'),
+  ('pytz/zoneinfo/America/Pangnirtung',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Pangnirtung',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT',
+   'DATA'),
+  ('pytz/zoneinfo/America/Dominica',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Dominica',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Astrakhan',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Astrakhan',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Guadalcanal',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Guadalcanal',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Tarawa',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Tarawa',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Makassar',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Makassar',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Ceuta',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Ceuta',
+   'DATA'),
+  ('pytz/zoneinfo/America/Argentina/Catamarca',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Argentina/Catamarca',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Saratov',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Saratov',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Singapore',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Singapore',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Magadan',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Magadan',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Yangon',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Yangon',
+   'DATA'),
+  ('pytz/zoneinfo/GMT+0',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/GMT+0',
+   'DATA'),
+  ('pytz/zoneinfo/GMT0',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/GMT0',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Galapagos',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Galapagos',
+   'DATA'),
+  ('pytz/zoneinfo/America/Argentina/Buenos_Aires',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Argentina/Buenos_Aires',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Samoa',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Samoa',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Chita',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Chita',
+   'DATA'),
+  ('pytz/zoneinfo/America/Eirunepe',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Eirunepe',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Tiraspol',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Tiraspol',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Lome',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Lome',
+   'DATA'),
+  ('pytz/zoneinfo/America/Costa_Rica',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Costa_Rica',
+   'DATA'),
+  ('pytz/zoneinfo/Atlantic/Jan_Mayen',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Atlantic/Jan_Mayen',
+   'DATA'),
+  ('pytz/zoneinfo/America/Tegucigalpa',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Tegucigalpa',
+   'DATA'),
+  ('pytz/zoneinfo/America/Jujuy',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Jujuy',
+   'DATA'),
+  ('pytz/zoneinfo/America/Buenos_Aires',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Buenos_Aires',
+   'DATA'),
+  ('pytz/zoneinfo/America/Blanc-Sablon',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Blanc-Sablon',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Yakutsk',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Yakutsk',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Tongatapu',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Tongatapu',
+   'DATA'),
+  ('pytz/zoneinfo/America/Santarem',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Santarem',
+   'DATA'),
+  ('pytz/zoneinfo/America/Monterrey',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Monterrey',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Conakry',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Conakry',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Kiev',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Kiev',
+   'DATA'),
+  ('pytz/zoneinfo/Antarctica/South_Pole',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Antarctica/South_Pole',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/San_Marino',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/San_Marino',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT+11',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT+11',
+   'DATA'),
+  ('pytz/zoneinfo/America/Fort_Nelson',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Fort_Nelson',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Tashkent',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Tashkent',
+   'DATA'),
+  ('pytz/zoneinfo/Antarctica/McMurdo',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Antarctica/McMurdo',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Macau',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Macau',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Blantyre',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Blantyre',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Harare',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Harare',
+   'DATA'),
+  ('pytz/zoneinfo/America/Mazatlan',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Mazatlan',
+   'DATA'),
+  ('pytz/zoneinfo/America/Scoresbysund',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Scoresbysund',
+   'DATA'),
+  ('pytz/zoneinfo/Eire',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Eire',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT+5',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT+5',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Riga',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Riga',
+   'DATA'),
+  ('pytz/zoneinfo/America/Thunder_Bay',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Thunder_Bay',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Helsinki',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Helsinki',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Almaty',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Almaty',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Kathmandu',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Kathmandu',
+   'DATA'),
+  ('pytz/zoneinfo/America/Asuncion',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Asuncion',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Nairobi',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Nairobi',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Noumea',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Noumea',
+   'DATA'),
+  ('pytz/zoneinfo/Antarctica/DumontDUrville',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Antarctica/DumontDUrville',
+   'DATA'),
+  ('pytz/zoneinfo/America/Miquelon',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Miquelon',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT-5',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT-5',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Vatican',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Vatican',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT-3',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT-3',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Kaliningrad',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Kaliningrad',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Isle_of_Man',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Isle_of_Man',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Guernsey',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Guernsey',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Malta',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Malta',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Johnston',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Johnston',
+   'DATA'),
+  ('pytz/zoneinfo/America/Los_Angeles',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Los_Angeles',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Bangkok',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Bangkok',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Kwajalein',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Kwajalein',
+   'DATA'),
+  ('pytz/zoneinfo/Canada/Atlantic',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Canada/Atlantic',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Dar_es_Salaam',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Dar_es_Salaam',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Urumqi',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Urumqi',
+   'DATA'),
+  ('pytz/zoneinfo/US/Arizona',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/US/Arizona',
+   'DATA'),
+  ('pytz/zoneinfo/America/Belize',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Belize',
+   'DATA'),
+  ('pytz/zoneinfo/Atlantic/Stanley',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Atlantic/Stanley',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Simferopol',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Simferopol',
+   'DATA'),
+  ('pytz/zoneinfo/America/Moncton',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Moncton',
+   'DATA'),
+  ('pytz/zoneinfo/America/Guayaquil',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Guayaquil',
+   'DATA'),
+  ('pytz/zoneinfo/America/Argentina/Mendoza',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Argentina/Mendoza',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Tallinn',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Tallinn',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Luxembourg',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Luxembourg',
+   'DATA'),
+  ('pytz/zoneinfo/America/Santa_Isabel',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Santa_Isabel',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Jersey',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Jersey',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Wallis',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Wallis',
+   'DATA'),
+  ('pytz/zoneinfo/NZ-CHAT',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/NZ-CHAT',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Sakhalin',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Sakhalin',
+   'DATA'),
+  ('pytz/zoneinfo/GMT',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/GMT',
+   'DATA'),
+  ('pytz/zoneinfo/America/Creston',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Creston',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT-2',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT-2',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Muscat',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Muscat',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Tokyo',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Tokyo',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Monrovia',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Monrovia',
+   'DATA'),
+  ('pytz/zoneinfo/W-SU',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/W-SU',
+   'DATA'),
+  ('pytz/zoneinfo/America/Sitka',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Sitka',
+   'DATA'),
+  ('pytz/zoneinfo/Atlantic/Faroe',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Atlantic/Faroe',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Bucharest',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Bucharest',
+   'DATA'),
+  ('pytz/zoneinfo/America/Halifax',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Halifax',
+   'DATA'),
+  ('pytz/zoneinfo/Mexico/BajaSur',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Mexico/BajaSur',
+   'DATA'),
+  ('pytz/zoneinfo/America/Yakutat',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Yakutat',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Novokuznetsk',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Novokuznetsk',
+   'DATA'),
+  ('pytz/zoneinfo/America/Grand_Turk',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Grand_Turk',
+   'DATA'),
+  ('pytz/zoneinfo/America/Montserrat',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Montserrat',
+   'DATA'),
+  ('pytz/zoneinfo/America/Goose_Bay',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Goose_Bay',
+   'DATA'),
+  ('pytz/zoneinfo/Cuba',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Cuba',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Djibouti',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Djibouti',
+   'DATA'),
+  ('pytz/zoneinfo/Brazil/DeNoronha',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Brazil/DeNoronha',
+   'DATA'),
+  ('pytz/zoneinfo/America/Tortola',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Tortola',
+   'DATA'),
+  ('pytz/zoneinfo/Navajo',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Navajo',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Macao',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Macao',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Kolkata',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Kolkata',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/ACT',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/ACT',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Rangoon',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Rangoon',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Wake',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Wake',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/Canberra',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/Canberra',
+   'DATA'),
+  ('pytz/zoneinfo/Indian/Comoro',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Indian/Comoro',
+   'DATA'),
+  ('pytz/zoneinfo/America/Hermosillo',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Hermosillo',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Honolulu',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Honolulu',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Budapest',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Budapest',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Cairo',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Cairo',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Krasnoyarsk',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Krasnoyarsk',
+   'DATA'),
+  ('pytz/zoneinfo/Brazil/Acre',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Brazil/Acre',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Bishkek',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Bishkek',
+   'DATA'),
+  ('pytz/zoneinfo/America/St_Kitts',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/St_Kitts',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Yerevan',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Yerevan',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Libreville',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Libreville',
+   'DATA'),
+  ('pytz/zoneinfo/CST6CDT',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/CST6CDT',
+   'DATA'),
+  ('pytz/zoneinfo/America/St_Lucia',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/St_Lucia',
+   'DATA'),
+  ('pytz/zoneinfo/America/Indiana/Vincennes',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Indiana/Vincennes',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/Brisbane',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/Brisbane',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Lagos',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Lagos',
+   'DATA'),
+  ('pytz/zoneinfo/America/Jamaica',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Jamaica',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Tahiti',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Tahiti',
+   'DATA'),
+  ('pytz/zoneinfo/America/Knox_IN',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Knox_IN',
+   'DATA'),
+  ('pytz/zoneinfo/America/Nipigon',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Nipigon',
+   'DATA'),
+  ('pytz/zoneinfo/Libya',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Libya',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Ulan_Bator',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Ulan_Bator',
+   'DATA'),
+  ('pytz/zoneinfo/Antarctica/Rothera',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Antarctica/Rothera',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Tel_Aviv',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Tel_Aviv',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Kyiv',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Kyiv',
+   'DATA'),
+  ('pytz/zoneinfo/iso3166.tab',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/iso3166.tab',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT+0',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT+0',
+   'DATA'),
+  ('pytz/zoneinfo/Antarctica/Mawson',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Antarctica/Mawson',
+   'DATA'),
+  ('pytz/zoneinfo/tzdata.zi',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/tzdata.zi',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Hong_Kong',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Hong_Kong',
+   'DATA'),
+  ('pytz/zoneinfo/America/Kentucky/Louisville',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Kentucky/Louisville',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Rome',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Rome',
+   'DATA'),
+  ('pytz/zoneinfo/Antarctica/Davis',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Antarctica/Davis',
+   'DATA'),
+  ('pytz/zoneinfo/America/Nome',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Nome',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Sao_Tome',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Sao_Tome',
+   'DATA'),
+  ('pytz/zoneinfo/Universal',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Universal',
+   'DATA'),
+  ('pytz/zoneinfo/America/Argentina/Rio_Gallegos',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Argentina/Rio_Gallegos',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/North',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/North',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Kashgar',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Kashgar',
+   'DATA'),
+  ('pytz/zoneinfo/America/Campo_Grande',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Campo_Grande',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/Melbourne',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/Melbourne',
+   'DATA'),
+  ('pytz/zoneinfo/Indian/Chagos',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Indian/Chagos',
+   'DATA'),
+  ('pytz/zoneinfo/America/Curacao',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Curacao',
+   'DATA'),
+  ('pytz/zoneinfo/America/Edmonton',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Edmonton',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Ashgabat',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Ashgabat',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT-10',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT-10',
+   'DATA'),
+  ('pytz/zoneinfo/America/Bahia',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Bahia',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Timbuktu',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Timbuktu',
+   'DATA'),
+  ('pytz/zoneinfo/America/Rio_Branco',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Rio_Branco',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT-6',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT-6',
+   'DATA'),
+  ('pytz/zoneinfo/Israel',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Israel',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Jayapura',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Jayapura',
+   'DATA'),
+  ('pytz/zoneinfo/America/Sao_Paulo',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Sao_Paulo',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Asmera',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Asmera',
+   'DATA'),
+  ('pytz/zoneinfo/America/Antigua',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Antigua',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/Eucla',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/Eucla',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT+8',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT+8',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Marquesas',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Marquesas',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Anadyr',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Anadyr',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/LHI',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/LHI',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Tripoli',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Tripoli',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Vladivostok',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Vladivostok',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/El_Aaiun',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/El_Aaiun',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Pago_Pago',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Pago_Pago',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT+10',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT+10',
+   'DATA'),
+  ('pytz/zoneinfo/America/Phoenix',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Phoenix',
+   'DATA'),
+  ('pytz/zoneinfo/America/Indianapolis',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Indianapolis',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Bangui',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Bangui',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Pyongyang',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Pyongyang',
+   'DATA'),
+  ('pytz/zoneinfo/America/Cayman',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Cayman',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Majuro',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Majuro',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Nicosia',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Nicosia',
+   'DATA'),
+  ('pytz/zoneinfo/Antarctica/Casey',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Antarctica/Casey',
+   'DATA'),
+  ('pytz/zoneinfo/Canada/Newfoundland',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Canada/Newfoundland',
+   'DATA'),
+  ('pytz/zoneinfo/Poland',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Poland',
+   'DATA'),
+  ('pytz/zoneinfo/America/Argentina/San_Luis',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Argentina/San_Luis',
+   'DATA'),
+  ('pytz/zoneinfo/Iceland',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Iceland',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Belfast',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Belfast',
+   'DATA'),
+  ('pytz/zoneinfo/Canada/Eastern',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Canada/Eastern',
+   'DATA'),
+  ('pytz/zoneinfo/EST5EDT',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/EST5EDT',
+   'DATA'),
+  ('pytz/zoneinfo/America/Yellowknife',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Yellowknife',
+   'DATA'),
+  ('pytz/zoneinfo/America/Boise',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Boise',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Addis_Ababa',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Addis_Ababa',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Baghdad',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Baghdad',
+   'DATA'),
+  ('pytz/zoneinfo/Greenwich',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Greenwich',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Port_Moresby',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Port_Moresby',
+   'DATA'),
+  ('pytz/zoneinfo/America/Rainy_River',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Rainy_River',
+   'DATA'),
+  ('pytz/zoneinfo/America/Recife',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Recife',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Ulaanbaatar',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Ulaanbaatar',
+   'DATA'),
+  ('pytz/zoneinfo/UTC',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/UTC',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT0',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT0',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Zaporozhye',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Zaporozhye',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/NSW',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/NSW',
+   'DATA'),
+  ('pytz/zoneinfo/America/Catamarca',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Catamarca',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Aqtobe',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Aqtobe',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/Perth',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/Perth',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/Greenwich',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/Greenwich',
+   'DATA'),
+  ('pytz/zoneinfo/Jamaica',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Jamaica',
+   'DATA'),
+  ('pytz/zoneinfo/PST8PDT',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/PST8PDT',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Andorra',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Andorra',
+   'DATA'),
+  ('pytz/zoneinfo/America/Nassau',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Nassau',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Kuching',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Kuching',
+   'DATA'),
+  ('pytz/zoneinfo/America/Noronha',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Noronha',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Lubumbashi',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Lubumbashi',
+   'DATA'),
+  ('pytz/zoneinfo/US/Central',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/US/Central',
+   'DATA'),
+  ('pytz/zoneinfo/Mexico/General',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Mexico/General',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT-12',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT-12',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Algiers',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Algiers',
+   'DATA'),
+  ('pytz/zoneinfo/America/Porto_Velho',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Porto_Velho',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Madrid',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Madrid',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Hebron',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Hebron',
+   'DATA'),
+  ('pytz/zoneinfo/America/Guadeloupe',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Guadeloupe',
+   'DATA'),
+  ('pytz/zoneinfo/America/Argentina/Salta',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Argentina/Salta',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Gambier',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Gambier',
+   'DATA'),
+  ('pytz/zoneinfo/GB-Eire',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/GB-Eire',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT+12',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT+12',
+   'DATA'),
+  ('pytz/zoneinfo/America/Whitehorse',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Whitehorse',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Samara',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Samara',
+   'DATA'),
+  ('pytz/zoneinfo/Antarctica/Troll',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Antarctica/Troll',
+   'DATA'),
+  ('pytz/zoneinfo/America/Argentina/Ushuaia',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Argentina/Ushuaia',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Gaborone',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Gaborone',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Irkutsk',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Irkutsk',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Minsk',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Minsk',
+   'DATA'),
+  ('pytz/zoneinfo/America/Port-au-Prince',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Port-au-Prince',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Abidjan',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Abidjan',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Khandyga',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Khandyga',
+   'DATA'),
+  ('pytz/zoneinfo/America/Adak',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Adak',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Auckland',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Auckland',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Sarajevo',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Sarajevo',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Efate',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Efate',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Maseru',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Maseru',
+   'DATA'),
+  ('pytz/zoneinfo/America/Fort_Wayne',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Fort_Wayne',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Dhaka',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Dhaka',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Bahrain',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Bahrain',
+   'DATA'),
+  ('pytz/zoneinfo/Japan',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Japan',
+   'DATA'),
+  ('pytz/zoneinfo/US/Aleutian',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/US/Aleutian',
+   'DATA'),
+  ('pytz/zoneinfo/NZ',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/NZ',
+   'DATA'),
+  ('pytz/zoneinfo/Arctic/Longyearbyen',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Arctic/Longyearbyen',
+   'DATA'),
+  ('pytz/zoneinfo/Factory',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Factory',
+   'DATA'),
+  ('pytz/zoneinfo/Brazil/West',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Brazil/West',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Freetown',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Freetown',
+   'DATA'),
+  ('pytz/zoneinfo/Antarctica/Palmer',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Antarctica/Palmer',
+   'DATA'),
+  ('pytz/zoneinfo/Atlantic/Madeira',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Atlantic/Madeira',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT+3',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT+3',
+   'DATA'),
+  ('pytz/zoneinfo/America/Araguaina',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Araguaina',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/Hobart',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/Hobart',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Kiritimati',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Kiritimati',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Easter',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Easter',
+   'DATA'),
+  ('pytz/zoneinfo/Kwajalein',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Kwajalein',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Barnaul',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Barnaul',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Uzhgorod',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Uzhgorod',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Kabul',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Kabul',
+   'DATA'),
+  ('pytz/zoneinfo/America/St_Johns',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/St_Johns',
+   'DATA'),
+  ('pytz/zoneinfo/America/Fortaleza',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Fortaleza',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Podgorica',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Podgorica',
+   'DATA'),
+  ('pytz/zoneinfo/America/Iqaluit',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Iqaluit',
+   'DATA'),
+  ('pytz/zoneinfo/America/Denver',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Denver',
+   'DATA'),
+  ('pytz/zoneinfo/Atlantic/St_Helena',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Atlantic/St_Helena',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/Tasmania',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/Tasmania',
+   'DATA'),
+  ('pytz/zoneinfo/Pacific/Midway',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Pacific/Midway',
+   'DATA'),
+  ('pytz/zoneinfo/Egypt',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Egypt',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Skopje',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Skopje',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Ashkhabad',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Ashkhabad',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Ouagadougou',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Ouagadougou',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Ust-Nera',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Ust-Nera',
+   'DATA'),
+  ('pytz/zoneinfo/HST',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/HST',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Damascus',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Damascus',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Zurich',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Zurich',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT-4',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT-4',
+   'DATA'),
+  ('pytz/zoneinfo/Atlantic/Faeroe',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Atlantic/Faeroe',
+   'DATA'),
+  ('pytz/zoneinfo/Australia/Adelaide',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Australia/Adelaide',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Monaco',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Monaco',
+   'DATA'),
+  ('pytz/zoneinfo/Atlantic/Bermuda',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Atlantic/Bermuda',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Casablanca',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Casablanca',
+   'DATA'),
+  ('pytz/zoneinfo/America/Thule',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Thule',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Thimphu',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Thimphu',
+   'DATA'),
+  ('pytz/zoneinfo/Etc/GMT-1',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Etc/GMT-1',
+   'DATA'),
+  ('pytz/zoneinfo/zone.tab',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/zone.tab',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Istanbul',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Istanbul',
+   'DATA'),
+  ('pytz/zoneinfo/UCT',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/UCT',
+   'DATA'),
+  ('pytz/zoneinfo/Asia/Dacca',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Asia/Dacca',
+   'DATA'),
+  ('pytz/zoneinfo/America/Godthab',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Godthab',
+   'DATA'),
+  ('pytz/zoneinfo/America/Indiana/Winamac',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Indiana/Winamac',
+   'DATA'),
+  ('pytz/zoneinfo/US/Indiana-Starke',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/US/Indiana-Starke',
+   'DATA'),
+  ('pytz/zoneinfo/Europe/Vilnius',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Europe/Vilnius',
+   'DATA'),
+  ('pytz/zoneinfo/America/Bogota',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Bogota',
+   'DATA'),
+  ('pytz/zoneinfo/Africa/Malabo',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Africa/Malabo',
+   'DATA'),
+  ('pytz/zoneinfo/America/Indiana/Vevay',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/America/Indiana/Vevay',
+   'DATA'),
+  ('pytz/zoneinfo/Indian/Mauritius',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/pytz/zoneinfo/Indian/Mauritius',
+   'DATA'),
+  ('certifi/py.typed',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/certifi/py.typed',
+   'DATA'),
+  ('certifi/cacert.pem',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/venv/lib/python3.9/site-packages/certifi/cacert.pem',
+   'DATA'),
+  ('Python3', 'Python3.framework/Versions/3.9/Python3', 'SYMLINK'),
+  ('base_library.zip',
+   '/Users/andretorres/Library/Mobile '
+   'Documents/com~apple~CloudDocs/Students/Carlos '
+   'Financial/build/main/base_library.zip',
+   'DATA'),
+  ('Python3.framework/Python3', 'Versions/Current/Python3', 'SYMLINK'),
+  ('Python3.framework/Resources', 'Versions/Current/Resources', 'SYMLINK'),
+  ('Python3.framework/Versions/3.9/Resources/Info.plist',
+   '/Library/Developer/CommandLineTools/Library/Frameworks/Python3.framework/Versions/3.9/Resources/Info.plist',
+   'DATA'),
+  ('Python3.framework/Versions/Current', '3.9', 'SYMLINK')],
+ 'Python3',
+ False,
+ False,
+ False,
+ [],
+ 'arm64',
+ None,
+ None)
