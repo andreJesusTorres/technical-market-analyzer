@@ -245,13 +245,15 @@ def main():
             # Determinar colores según condiciones
             macd_monthly = get_macd_signal(monthly_data)
             stoch_monthly = monthly_data['Stochastic'].iloc[-1] > 85
+            stoch_subiendo = monthly_data['Stochastic'].iloc[-1] > monthly_data['Stochastic'].iloc[-2]
             macd_weekly = get_macd_signal(weekly_data)
             
             # Determinar color mensual
-            if (macd_monthly == 'alza' and stoch_monthly):
-                monthly_color = 'verde'
-            elif not (macd_monthly == 'alza' and stoch_monthly):
-                monthly_color = 'amarillo'
+            if macd_monthly == 'alza':
+                if (stoch_subiendo or stoch_monthly):
+                    monthly_color = 'verde'
+                else:
+                    monthly_color = 'amarillo'
             else:
                 monthly_color = 'rosa'
                 
