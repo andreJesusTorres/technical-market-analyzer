@@ -10,12 +10,13 @@ jobs:
     runs-on: windows-latest
     
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     
     - name: Set up Python
-      uses: actions/setup-python@v2
+      uses: actions/setup-python@v4
       with:
         python-version: '3.9'
+        cache: 'pip'
     
     - name: Install dependencies
       run: |
@@ -23,12 +24,18 @@ jobs:
         pip install -r requirements.txt
         pip install pyinstaller
     
+    - name: List directory contents
+      run: dir
+    
     - name: Create Windows executable
       run: |
         pyinstaller --onefile --noconsole --add-data "resultados.xlsx;." main.py
     
+    - name: List dist directory
+      run: dir dist
+    
     - name: Upload artifact
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v3
       with:
         name: windows-executable
         path: dist/main.exe 
