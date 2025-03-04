@@ -79,6 +79,12 @@ def get_macd_signal(df):
     """Determina si MACD está cortado al alza o a la baja"""
     return 'alza' if df['MACD_Hist'].iloc[-1] > 0 else 'baja'
 
+def get_stoch_signal(df):
+    """Determina si el Estocástico está al alza o por encima de 85"""
+    current_stoch = df['Stochastic'].iloc[-1]
+    prev_stoch = df['Stochastic'].iloc[-2]
+    return current_stoch > 85 or current_stoch > prev_stoch
+
 def get_resource_path(relative_path):
     """Obtiene la ruta absoluta para recursos empaquetados"""
     try:
@@ -244,16 +250,14 @@ def main():
             
             # Determinar colores según condiciones
             macd_monthly = get_macd_signal(monthly_data)
-            stoch_monthly = monthly_data['Stochastic'].iloc[-1] > 85
-            stoch_subiendo = monthly_data['Stochastic'].iloc[-1] > monthly_data['Stochastic'].iloc[-2]
+            stoch_condition = get_stoch_signal(monthly_data)
             macd_weekly = get_macd_signal(weekly_data)
             
             # Determinar color mensual
-            if macd_monthly == 'alza':
-                if (stoch_subiendo or stoch_monthly):
-                    monthly_color = 'verde'
-                else:
-                    monthly_color = 'amarillo'
+            if macd_monthly == 'alza' and stoch_condition:
+                monthly_color = 'verde'
+            elif macd_monthly == 'alza' or stoch_condition:
+                monthly_color = 'amarillo'
             else:
                 monthly_color = 'rosa'
                 
