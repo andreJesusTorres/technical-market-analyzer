@@ -21,6 +21,10 @@ ROC_WINDOW = 26
 MACD_FAST = 12
 MACD_SLOW = 26
 MACD_SIGNAL = 9
+# Nuevas constantes para MACD trimestral
+MACD_TRI_FAST = 36
+MACD_TRI_SLOW = 78
+MACD_TRI_SIGNAL = 21
 STOCH_WINDOW = 89
 STOCH_SMOOTH = 3 
 EXCEL_FILE = 'resultados.xlsx'
@@ -70,20 +74,114 @@ def calculate_indicators(df):
     # Stochastic Oscillator
     low_min = df['Low'].rolling(window=STOCH_WINDOW).min()
     high_max = df['High'].rolling(window=STOCH_WINDOW).max()
-    df['Stochastic'] = 100 * ((df['Close'] - low_min) / (high_max - low_min))
-    df['Stochastic'] = df['Stochastic'].rolling(window=STOCH_SMOOTH).mean()
+    
+    # %K (Línea rápida)
+    df['Stochastic_K'] = 100 * ((df['Close'] - low_min) / (high_max - low_min))
+    
+    # %D (Línea lenta - media móvil de %K)
+    df['Stochastic_D'] = df['Stochastic_K'].rolling(window=STOCH_SMOOTH).mean()
     
     return df
 
+def calculate_trimestral_macd(df):
+    """Calcula el MACD con parámetros trimestrales (36,78,21)"""
+    exp1 = df['Close'].ewm(span=MACD_TRI_FAST, adjust=False).mean()
+    exp2 = df['Close'].ewm(span=MACD_TRI_SLOW, adjust=False).mean()
+    df['MACD_TRI'] = exp1 - exp2
+    df['MACD_TRI_Signal'] = df['MACD_TRI'].ewm(span=MACD_TRI_SIGNAL, adjust=False).mean()
+    df['MACD_TRI_Hist'] = df['MACD_TRI'] - df['MACD_TRI_Signal']
+    df['MACD_TRI_Fast'] = exp1
+    return df
+
+def get_trimestral_signal(df):
+    """Determina si el MACD trimestral está en verde o rosa"""
+    # Comparar la línea rápida (EMA 36) con la línea lenta (EMA 78)
+    fast_value = float(df['MACD_TRI_Fast'].iloc[-1])
+    slow_value = float(df['Close'].ewm(span=MACD_TRI_SLOW, adjust=False).mean().iloc[-1])
+    return 'verde' if fast_value > slow_value else 'rosa'
+
+def calculate_cross_macd(df):
+    """Calcula el MACD específico para la señal de cruce (12 y 9)"""
+    # Calcular EMA de 12 períodos
+    df['MACD_Cross'] = df['Close'].ewm(span=12, adjust=False).mean()
+    # Calcular EMA de 9 períodos
+    df['MACD_Cross_Signal'] = df['Close'].ewm(span=9, adjust=False).mean()
+    
+    # Debug: Imprimir los últimos valores calculados y los precios de cierre
+    print(f"\nÚltimos 5 valores para verificación:")
+    for i in range(4, -1, -1):
+        try:
+            idx = df.index[-1-i]
+            close = float(df['Close'].iloc[-1-i])
+            ema12 = float(df['MACD_Cross'].iloc[-1-i])
+            ema9 = float(df['MACD_Cross_Signal'].iloc[-1-i])
+            print(f"Fecha: {idx.strftime('%Y-%m-%d')}")
+            print(f"  Precio cierre: {close:.2f}")
+            print(f"  EMA 12: {ema12:.2f}")
+            print(f"  EMA 9: {ema9:.2f}")
+            print(f"  Diferencia: {(ema12 - ema9):.2f}")
+        except Exception as e:
+            print(f"Error al procesar datos: {str(e)}")
+            continue
+    
+    return df
+
+def get_cross_signal(df):
+    """Determina si hay un cruce del MACD (12 sobre 9) en la semana actual"""
+    if len(df) < 5:  # Necesitamos al menos 5 puntos de datos
+        return None
+    
+    try:
+        # Obtener los últimos valores de la línea MACD y su señal
+        current_macd = float(df['MACD_Cross'].iloc[-1])
+        current_signal = float(df['MACD_Cross_Signal'].iloc[-1])
+        
+        # Obtener los valores anteriores
+        prev_values = []
+        dates = []
+        for i in range(1, 5):  # Mirar las últimas 4 semanas
+            prev_macd = float(df['MACD_Cross'].iloc[-1-i])
+            prev_signal = float(df['MACD_Cross_Signal'].iloc[-1-i])
+            prev_values.append(prev_macd - prev_signal)
+            dates.append(df.index[-1-i])
+        
+        # Calcular la diferencia actual
+        current_diff = current_macd - current_signal
+        
+        # Usar una pequeña tolerancia para la detección de cruces
+        tolerance = 0.001
+        
+        # Debug: Imprimir análisis detallado
+        print(f"\nAnálisis de cruce:")
+        print(f"Fecha actual: {df.index[-1].strftime('%Y-%m-%d')}")
+        for i, (date, diff) in enumerate(zip(dates, prev_values)):
+            print(f"Semana -{i+1}: {date.strftime('%Y-%m-%d')} - Diferencia: {diff:.2f}")
+        print(f"Semana actual: Diferencia: {current_diff:.2f}")
+        
+        # Detectar cruce alcista (12 cruza por encima de 9)
+        if any(x < -tolerance for x in prev_values) and current_diff > tolerance:
+            print("¡Cruce alcista detectado! (EMA 12 cruza por encima de EMA 9)")
+            return 'azul'
+        # Detectar cruce bajista (12 cruza por debajo de 9)
+        elif any(x > tolerance for x in prev_values) and current_diff < -tolerance:
+            print("¡Cruce bajista detectado! (EMA 12 cruza por debajo de EMA 9)")
+            return 'naranja'
+        
+        print("No hay cruce detectado")
+        return None  # No hay cruce
+    except Exception as e:
+        print(f"Error al procesar señal: {str(e)}")
+        return None
+
 def get_macd_signal(df):
     """Determina si MACD está cortado al alza o a la baja"""
-    return 'alza' if df['MACD_Hist'].iloc[-1] > 0 else 'baja'
+    return 'alza' if float(df['MACD_Hist'].iloc[-1]) > 0 else 'baja'
 
 def get_stoch_signal(df):
-    """Determina si el Estocástico está al alza o por encima de 85"""
-    current_stoch = df['Stochastic'].iloc[-1]
-    prev_stoch = df['Stochastic'].iloc[-2]
-    return current_stoch > 85 or current_stoch > prev_stoch
+    """Determina si el Estocástico %K está por encima de 85"""
+    current_k = float(df['Stochastic_K'].iloc[-1])
+    prev_k = float(df['Stochastic_K'].iloc[-2])
+    return bool(current_k > 85 or current_k > prev_k)
 
 def get_resource_path(relative_path):
     """Obtiene la ruta absoluta para recursos empaquetados"""
@@ -127,7 +225,7 @@ def export_to_excel(df):
     font_style = openpyxl.styles.Font(color="FFFFFF", bold=True)
     
     # Escribir los encabezados
-    headers = ['Ticker', 'ROC', 'Mensual', 'Semanal']
+    headers = ['Ticker', 'ROC', 'Mensual', 'Semanal', 'Trimestral', 'Señal']
     for col, header in enumerate(headers, 1):
         cell = ws.cell(row=1, column=col, value=header)
         cell.fill = header_style
@@ -143,15 +241,20 @@ def export_to_excel(df):
     rosa = openpyxl.styles.PatternFill(
         start_color="FFB6C1", end_color="FFB6C1", fill_type="solid"
     )  # Rosa claro
+    azul = openpyxl.styles.PatternFill(
+        start_color="87CEEB", end_color="87CEEB", fill_type="solid"
+    )  # Azul claro
+    naranja = openpyxl.styles.PatternFill(
+        start_color="FFA500", end_color="FFA500", fill_type="solid"
+    )  # Naranja
     
     # Escribir los datos y aplicar colores
     for row, (_, data) in enumerate(df.iterrows(), 2):
         # Ticker
         ws.cell(row=row, column=1, value=data['Ticker'])
+        
         # ROC
         roc_cell = ws.cell(row=row, column=2, value=data['ROC'])
-        
-        # Aplicar formato condicional al ROC
         if data['ROC'] > 0:
             roc_cell.font = openpyxl.styles.Font(color="006100")  # Verde oscuro
         else:
@@ -172,6 +275,21 @@ def export_to_excel(df):
             cell_semanal.fill = verde
         else:
             cell_semanal.fill = rosa
+            
+        # Trimestral (aplicar color)
+        cell_trimestral = ws.cell(row=row, column=5)
+        if data['Trimestral'] == 'verde':
+            cell_trimestral.fill = verde
+        else:
+            cell_trimestral.fill = rosa
+            
+        # Señal (aplicar color)
+        cell_senal = ws.cell(row=row, column=6)
+        if data['Señal'] == 'azul':
+            cell_senal.fill = azul
+        elif data['Señal'] == 'naranja':
+            cell_senal.fill = naranja
+        # Si no hay señal, se queda en blanco
     
     # Ajustar el ancho de las columnas
     for column in ws.columns:
@@ -194,7 +312,7 @@ def export_to_excel(df):
         bottom=openpyxl.styles.Side(style='thin')
     )
     
-    for row in ws.iter_rows(min_row=1, max_row=len(df) + 1, min_col=1, max_col=4):
+    for row in ws.iter_rows(min_row=1, max_row=len(df) + 1, min_col=1, max_col=6):
         for cell in row:
             cell.border = thin_border
     
@@ -244,14 +362,16 @@ def main():
             # Calcular indicadores
             weekly_data = calculate_indicators(weekly_data)
             monthly_data = calculate_indicators(monthly_data)
+            monthly_data = calculate_trimestral_macd(monthly_data)
+            weekly_data = calculate_cross_macd(weekly_data)
             
-            # Obtener último ROC semanal
+            # Obtener señales
             roc_value = weekly_data['ROC'].iloc[-1]
-            
-            # Determinar colores según condiciones
             macd_monthly = get_macd_signal(monthly_data)
             stoch_condition = get_stoch_signal(monthly_data)
             macd_weekly = get_macd_signal(weekly_data)
+            trimestral_signal = get_trimestral_signal(monthly_data)
+            cross_signal = get_cross_signal(weekly_data)
             
             # Determinar color mensual
             if macd_monthly == 'alza' and stoch_condition:
@@ -269,7 +389,9 @@ def main():
                 'Ticker': ticker,
                 'ROC': round(roc_value, 2) if not np.isnan(roc_value) else 0,
                 'Mensual': monthly_color,
-                'Semanal': weekly_color
+                'Semanal': weekly_color,
+                'Trimestral': trimestral_signal,
+                'Señal': cross_signal
             })
             
         except Exception as e:
