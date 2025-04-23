@@ -1,4 +1,0 @@
-([('main',
-   '/Users/andretorres/Library/Mobile '
-   'Documents/com~apple~CloudDocs/Students/Carlos Financial/dist/main',
-   'EXECUTABLE')],)

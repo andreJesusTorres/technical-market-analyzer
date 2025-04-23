@@ -1,3 +1,4 @@
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -18,10 +19,22 @@ wheels/
 *.egg-info/
 .installed.cfg
 *.egg
-MANIFEST
-.env
+
+# Virtual Environment
 venv/
-.venv/
+ENV/
+
+# IDE
 .idea/
 .vscode/
-*.spec resultados.xlsx
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Project specific
+*.spec
+*.exe
+resultados.xlsx
