@@ -28,8 +28,15 @@ jobs:
       run: |
         pyinstaller main.spec
         
+    - name: Clean up old artifacts
+      uses: actions/delete-artifact@v4
+      with:
+        name: AnalisisMercados
+        
     - name: Upload artifact
       uses: actions/upload-artifact@v4
       with:
         name: AnalisisMercados
-        path: dist/AnalisisMercados.exe 
+        path: dist/AnalisisMercados.exe
+        compression-level: 9
+        retention-days: 7 
