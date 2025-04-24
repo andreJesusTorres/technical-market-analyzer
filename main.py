@@ -85,20 +85,46 @@ def calculate_indicators(df):
 
 def calculate_trimestral_macd(df):
     """Calcula el MACD con parámetros trimestrales (36,78,21)"""
-    exp1 = df['Close'].ewm(span=MACD_TRI_FAST, adjust=False).mean()
-    exp2 = df['Close'].ewm(span=MACD_TRI_SLOW, adjust=False).mean()
-    df['MACD_TRI'] = exp1 - exp2
-    df['MACD_TRI_Signal'] = df['MACD_TRI'].ewm(span=MACD_TRI_SIGNAL, adjust=False).mean()
+    # Calcular EMAs usando datos mensuales
+    ema_36 = df['Close'].ewm(span=36, adjust=False, min_periods=0).mean()
+    ema_21 = df['Close'].ewm(span=21, adjust=False, min_periods=0).mean()
+    
+    # Guardar las EMAs para comparación
+    df['EMA_36'] = ema_36
+    df['EMA_21'] = ema_21
+    
+    # Calcular MACD y señal (mantenemos esto para compatibilidad)
+    df['MACD_TRI'] = ema_36 - ema_21  # Cambiamos esto para usar la diferencia entre EMA 36 y EMA 21
+    df['MACD_TRI_Signal'] = df['MACD_TRI'].ewm(span=21, adjust=False, min_periods=0).mean()
     df['MACD_TRI_Hist'] = df['MACD_TRI'] - df['MACD_TRI_Signal']
-    df['MACD_TRI_Fast'] = exp1
+    
+    # Debug: imprimir los últimos valores para verificación
+    print(f"\nÚltimos valores de EMAs trimestrales:")
+    print(f"EMA 36: {float(ema_36.iloc[-1]):.2f}")
+    print(f"EMA 21: {float(ema_21.iloc[-1]):.2f}")
+    print(f"Diferencia: {float(ema_36.iloc[-1] - ema_21.iloc[-1]):.2f}")
+    
     return df
 
 def get_trimestral_signal(df):
     """Determina si el MACD trimestral está en verde o rosa"""
-    # Comparar la línea rápida (EMA 36) con la línea lenta (EMA 78)
-    fast_value = float(df['MACD_TRI_Fast'].iloc[-1])
-    slow_value = float(df['Close'].ewm(span=MACD_TRI_SLOW, adjust=False).mean().iloc[-1])
-    return 'verde' if fast_value > slow_value else 'rosa'
+    try:
+        # Comparar EMA 36 con EMA 21
+        ema_36 = float(df['EMA_36'].iloc[-1])
+        ema_21 = float(df['EMA_21'].iloc[-1])
+        
+        # Debug: imprimir los valores y la señal
+        print(f"\nSeñal Trimestral:")
+        print(f"EMA 36: {ema_36:.2f}")
+        print(f"EMA 21: {ema_21:.2f}")
+        print(f"Diferencia: {ema_36 - ema_21:.2f}")
+        print(f"Señal: {'verde' if ema_36 > ema_21 else 'rosa'}")
+        
+        # Verde si EMA 36 > EMA 21, Rosa si EMA 36 < EMA 21
+        return 'verde' if ema_36 > ema_21 else 'rosa'
+    except Exception as e:
+        print(f"Error al calcular señal trimestral: {str(e)}")
+        return 'rosa'  # Por defecto, retornamos rosa en caso de error
 
 def calculate_cross_macd(df):
     """Calcula el MACD específico para la señal de cruce (12 y 9)"""
@@ -225,7 +251,7 @@ def export_to_excel(df):
     font_style = openpyxl.styles.Font(color="FFFFFF", bold=True)
     
     # Escribir los encabezados
-    headers = ['Ticker', 'ROC', 'Mensual', 'Semanal', 'Trimestral', 'Señal']
+    headers = ['Ticker', 'ROC', 'Trimestral', 'Mensual', 'Semanal', 'Señal']
     for col, header in enumerate(headers, 1):
         cell = ws.cell(row=1, column=col, value=header)
         cell.fill = header_style
@@ -260,8 +286,15 @@ def export_to_excel(df):
         else:
             roc_cell.font = openpyxl.styles.Font(color="9C0006")  # Rojo oscuro
         
+        # Trimestral (aplicar color)
+        cell_trimestral = ws.cell(row=row, column=3)
+        if data['Trimestral'] == 'verde':
+            cell_trimestral.fill = verde
+        else:
+            cell_trimestral.fill = rosa
+        
         # Mensual (aplicar color)
-        cell_mensual = ws.cell(row=row, column=3)
+        cell_mensual = ws.cell(row=row, column=4)
         if data['Mensual'] == 'verde':
             cell_mensual.fill = verde
         elif data['Mensual'] == 'amarillo':
@@ -270,18 +303,11 @@ def export_to_excel(df):
             cell_mensual.fill = rosa
             
         # Semanal (aplicar color)
-        cell_semanal = ws.cell(row=row, column=4)
+        cell_semanal = ws.cell(row=row, column=5)
         if data['Semanal'] == 'verde':
             cell_semanal.fill = verde
         else:
             cell_semanal.fill = rosa
-            
-        # Trimestral (aplicar color)
-        cell_trimestral = ws.cell(row=row, column=5)
-        if data['Trimestral'] == 'verde':
-            cell_trimestral.fill = verde
-        else:
-            cell_trimestral.fill = rosa
             
         # Señal (aplicar color)
         cell_senal = ws.cell(row=row, column=6)
