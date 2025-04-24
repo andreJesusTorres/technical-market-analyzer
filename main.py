@@ -407,12 +407,7 @@ def main():
             cross_signal = get_cross_signal(weekly_data)
             
             # Determinar color mensual
-            if macd_hist > 0 and (stoch_conditions['up'] or current_k > 85):
-                monthly_color = 'verde'
-            elif macd_hist < 0 and stoch_conditions['down'] and current_k < 85:
-                monthly_color = 'rosa'
-            else:
-                monthly_color = 'amarillo'
+            monthly_color = 'verde' if macd_hist > 0 else 'rosa'
                 
             # Determinar color semanal
             weekly_color = 'verde' if macd_weekly == 'alza' else 'rosa'
