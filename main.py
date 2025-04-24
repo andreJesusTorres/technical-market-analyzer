@@ -61,8 +61,18 @@ def download_data(ticker, period):
 
 def calculate_indicators(df):
     """Calcula los indicadores técnicos para el análisis"""
-    # ROC (Rate of Change)
-    df['ROC'] = ((df['Close'] - df['Close'].shift(ROC_WINDOW)) / df['Close'].shift(ROC_WINDOW)) * 100
+    # ROC (Rate of Change) - Usando el último precio vs el precio de hace 26 períodos
+    last_price = float(df['Close'].iloc[-1])
+    prev_price = float(df['Close'].iloc[-ROC_WINDOW-1])
+    
+    # Debug prints
+    print(f"\nDebug ROC:")
+    print(f"Último precio: {last_price:.2f}")
+    print(f"Precio hace {ROC_WINDOW} períodos: {prev_price:.2f}")
+    roc = ((last_price - prev_price) / prev_price) * 100
+    print(f"ROC calculado: {roc:.2f}%")
+    
+    df['ROC'] = roc
     
     # MACD (Moving Average Convergence Divergence)
     exp1 = df['Close'].ewm(span=MACD_FAST, adjust=False).mean()
@@ -78,8 +88,8 @@ def calculate_indicators(df):
     # %K (Línea rápida)
     df['Stochastic_K'] = 100 * ((df['Close'] - low_min) / (high_max - low_min))
     
-    # %D (Línea lenta - media móvil de %K)
-    df['Stochastic_D'] = df['Stochastic_K'].rolling(window=STOCH_SMOOTH).mean()
+    # %D (Línea lenta - media móvil simple de %K)
+    df['Stochastic_D'] = df['Stochastic_K'].rolling(window=STOCH_SMOOTH).mean()  # SMA en lugar de EMA
     
     return df
 
@@ -87,116 +97,98 @@ def calculate_trimestral_macd(df):
     """Calcula el MACD con parámetros trimestrales (36,78,21)"""
     # Calcular EMAs usando datos mensuales
     ema_36 = df['Close'].ewm(span=36, adjust=False, min_periods=0).mean()
-    ema_21 = df['Close'].ewm(span=21, adjust=False, min_periods=0).mean()
+    ema_78 = df['Close'].ewm(span=78, adjust=False, min_periods=0).mean()
     
     # Guardar las EMAs para comparación
     df['EMA_36'] = ema_36
-    df['EMA_21'] = ema_21
+    df['EMA_78'] = ema_78
     
-    # Calcular MACD y señal (mantenemos esto para compatibilidad)
-    df['MACD_TRI'] = ema_36 - ema_21  # Cambiamos esto para usar la diferencia entre EMA 36 y EMA 21
+    # Calcular MACD y señal
+    df['MACD_TRI'] = ema_36 - ema_78
     df['MACD_TRI_Signal'] = df['MACD_TRI'].ewm(span=21, adjust=False, min_periods=0).mean()
     df['MACD_TRI_Hist'] = df['MACD_TRI'] - df['MACD_TRI_Signal']
     
     # Debug: imprimir los últimos valores para verificación
     print(f"\nÚltimos valores de EMAs trimestrales:")
     print(f"EMA 36: {float(ema_36.iloc[-1]):.2f}")
-    print(f"EMA 21: {float(ema_21.iloc[-1]):.2f}")
-    print(f"Diferencia: {float(ema_36.iloc[-1] - ema_21.iloc[-1]):.2f}")
+    print(f"EMA 78: {float(ema_78.iloc[-1]):.2f}")
+    print(f"Diferencia: {float(ema_36.iloc[-1] - ema_78.iloc[-1]):.2f}")
     
     return df
 
 def get_trimestral_signal(df):
     """Determina si el MACD trimestral está en verde o rosa"""
     try:
-        # Comparar EMA 36 con EMA 21
-        ema_36 = float(df['EMA_36'].iloc[-1])
-        ema_21 = float(df['EMA_21'].iloc[-1])
+        # Obtener el último valor del MACD y su señal
+        macd = float(df['MACD_TRI'].iloc[-1])
+        signal = float(df['MACD_TRI_Signal'].iloc[-1])
         
         # Debug: imprimir los valores y la señal
         print(f"\nSeñal Trimestral:")
-        print(f"EMA 36: {ema_36:.2f}")
-        print(f"EMA 21: {ema_21:.2f}")
-        print(f"Diferencia: {ema_36 - ema_21:.2f}")
-        print(f"Señal: {'verde' if ema_36 > ema_21 else 'rosa'}")
+        print(f"MACD: {macd:.2f}")
+        print(f"Señal: {signal:.2f}")
+        print(f"Diferencia: {macd - signal:.2f}")
+        print(f"Color: {'verde' if macd > signal else 'rosa'}")
         
-        # Verde si EMA 36 > EMA 21, Rosa si EMA 36 < EMA 21
-        return 'verde' if ema_36 > ema_21 else 'rosa'
+        # Verde si MACD > Señal, Rosa si MACD < Señal
+        return 'verde' if macd > signal else 'rosa'
     except Exception as e:
         print(f"Error al calcular señal trimestral: {str(e)}")
         return 'rosa'  # Por defecto, retornamos rosa en caso de error
 
 def calculate_cross_macd(df):
-    """Calcula el MACD específico para la señal de cruce (12 y 9)"""
+    """Calcula las EMAs para la señal de cruce (12 y 9)"""
     # Calcular EMA de 12 períodos
-    df['MACD_Cross'] = df['Close'].ewm(span=12, adjust=False).mean()
-    # Calcular EMA de 9 períodos
-    df['MACD_Cross_Signal'] = df['Close'].ewm(span=9, adjust=False).mean()
+    df['EMA_12'] = df['Close'].ewm(span=12, adjust=False).mean()
+    # Calcular EMA de 9 períodos (Señal)
+    df['EMA_9'] = df['Close'].ewm(span=9, adjust=False).mean()
     
-    # Debug: Imprimir los últimos valores calculados y los precios de cierre
-    print(f"\nÚltimos 5 valores para verificación:")
-    for i in range(4, -1, -1):
-        try:
-            idx = df.index[-1-i]
-            close = float(df['Close'].iloc[-1-i])
-            ema12 = float(df['MACD_Cross'].iloc[-1-i])
-            ema9 = float(df['MACD_Cross_Signal'].iloc[-1-i])
-            print(f"Fecha: {idx.strftime('%Y-%m-%d')}")
-            print(f"  Precio cierre: {close:.2f}")
-            print(f"  EMA 12: {ema12:.2f}")
-            print(f"  EMA 9: {ema9:.2f}")
-            print(f"  Diferencia: {(ema12 - ema9):.2f}")
-        except Exception as e:
-            print(f"Error al procesar datos: {str(e)}")
-            continue
+    # Debug: Imprimir los últimos valores calculados
+    print(f"\nÚltimos valores para verificación:")
+    try:
+        ema12_last = float(df['EMA_12'].iloc[-1])
+        ema12_prev = float(df['EMA_12'].iloc[-2])
+        ema9_last = float(df['EMA_9'].iloc[-1])
+        ema9_prev = float(df['EMA_9'].iloc[-2])
+        
+        print(f"EMA 12 (último): {ema12_last:.2f}")
+        print(f"EMA 12 (penúltimo): {ema12_prev:.2f}")
+        print(f"EMA 9 (último): {ema9_last:.2f}")
+        print(f"EMA 9 (penúltimo): {ema9_prev:.2f}")
+    except Exception as e:
+        print(f"Error al imprimir valores de verificación: {str(e)}")
     
     return df
 
 def get_cross_signal(df):
-    """Determina si hay un cruce del MACD (12 sobre 9) en la semana actual"""
-    if len(df) < 5:  # Necesitamos al menos 5 puntos de datos
-        return None
-    
+    """Determina si hay un cruce de EMA 12 sobre EMA 9"""
     try:
-        # Obtener los últimos valores de la línea MACD y su señal
-        current_macd = float(df['MACD_Cross'].iloc[-1])
-        current_signal = float(df['MACD_Cross_Signal'].iloc[-1])
-        
-        # Obtener los valores anteriores
-        prev_values = []
-        dates = []
-        for i in range(1, 5):  # Mirar las últimas 4 semanas
-            prev_macd = float(df['MACD_Cross'].iloc[-1-i])
-            prev_signal = float(df['MACD_Cross_Signal'].iloc[-1-i])
-            prev_values.append(prev_macd - prev_signal)
-            dates.append(df.index[-1-i])
-        
-        # Calcular la diferencia actual
-        current_diff = current_macd - current_signal
-        
-        # Usar una pequeña tolerancia para la detección de cruces
-        tolerance = 0.001
+        # Obtener los valores necesarios
+        ema12_last = float(df['EMA_12'].iloc[-1])      # EMA12 (última DATA)
+        ema12_prev = float(df['EMA_12'].iloc[-2])      # EMA12 (penúltima DATA)
+        ema9_last = float(df['EMA_9'].iloc[-1])        # Señal (última DATA)
+        ema9_prev = float(df['EMA_9'].iloc[-2])        # Señal (penúltima DATA)
         
         # Debug: Imprimir análisis detallado
         print(f"\nAnálisis de cruce:")
-        print(f"Fecha actual: {df.index[-1].strftime('%Y-%m-%d')}")
-        for i, (date, diff) in enumerate(zip(dates, prev_values)):
-            print(f"Semana -{i+1}: {date.strftime('%Y-%m-%d')} - Diferencia: {diff:.2f}")
-        print(f"Semana actual: Diferencia: {current_diff:.2f}")
+        print(f"EMA12 (penúltima DATA): {ema12_prev:.2f}")
+        print(f"EMA12 (última DATA): {ema12_last:.2f}")
+        print(f"Señal (penúltima DATA): {ema9_prev:.2f}")
+        print(f"Señal (última DATA): {ema9_last:.2f}")
         
-        # Detectar cruce alcista (12 cruza por encima de 9)
-        if any(x < -tolerance for x in prev_values) and current_diff > tolerance:
-            print("¡Cruce alcista detectado! (EMA 12 cruza por encima de EMA 9)")
+        # Detectar señal azul: EMA12 (penúltima DATA) < Señal Y EMA12 (última DATA) > Señal
+        if ema12_prev < ema9_prev and ema12_last > ema9_last:
+            print("¡Señal AZUL detectada! (Cruce alcista)")
             return 'azul'
-        # Detectar cruce bajista (12 cruza por debajo de 9)
-        elif any(x > tolerance for x in prev_values) and current_diff < -tolerance:
-            print("¡Cruce bajista detectado! (EMA 12 cruza por debajo de EMA 9)")
+        # Detectar señal naranja: EMA12 (penúltima DATA) > Señal Y EMA12 (última DATA) < Señal
+        elif ema12_prev > ema9_prev and ema12_last < ema9_last:
+            print("¡Señal NARANJA detectada! (Cruce bajista)")
             return 'naranja'
         
-        print("No hay cruce detectado")
-        return None  # No hay cruce
+        print("No hay señal de cruce")
+        return None
     except Exception as e:
-        print(f"Error al procesar señal: {str(e)}")
+        print(f"Error al procesar señal de cruce: {str(e)}")
         return None
 
 def get_macd_signal(df):
@@ -204,10 +196,24 @@ def get_macd_signal(df):
     return 'alza' if float(df['MACD_Hist'].iloc[-1]) > 0 else 'baja'
 
 def get_stoch_signal(df):
-    """Determina si el Estocástico %K está por encima de 85"""
-    current_k = float(df['Stochastic_K'].iloc[-1])
-    prev_k = float(df['Stochastic_K'].iloc[-2])
-    return bool(current_k > 85 or current_k > prev_k)
+    """Determina las condiciones del Estocástico"""
+    try:
+        current_k = float(df['Stochastic_K'].iloc[-1])
+        current_d = float(df['Stochastic_D'].iloc[-1])
+        
+        # Verificar si SK>%D
+        stoch_condition_up = current_k > current_d
+        # Verificar si SK<%D
+        stoch_condition_down = current_k < current_d
+        
+        return {
+            'up': stoch_condition_up,
+            'down': stoch_condition_down,
+            'current_k': current_k
+        }
+    except Exception as e:
+        print(f"Error al calcular señal estocástica: {str(e)}")
+        return {'up': False, 'down': False, 'current_k': 0}
 
 def get_resource_path(relative_path):
     """Obtiene la ruta absoluta para recursos empaquetados"""
@@ -393,19 +399,20 @@ def main():
             
             # Obtener señales
             roc_value = weekly_data['ROC'].iloc[-1]
-            macd_monthly = get_macd_signal(monthly_data)
-            stoch_condition = get_stoch_signal(monthly_data)
+            macd_hist = float(monthly_data['MACD_Hist'].iloc[-1])
+            stoch_conditions = get_stoch_signal(monthly_data)
+            current_k = stoch_conditions.get('current_k', 0)
             macd_weekly = get_macd_signal(weekly_data)
             trimestral_signal = get_trimestral_signal(monthly_data)
             cross_signal = get_cross_signal(weekly_data)
             
             # Determinar color mensual
-            if macd_monthly == 'alza' and stoch_condition:
+            if macd_hist > 0 and (stoch_conditions['up'] or current_k > 85):
                 monthly_color = 'verde'
-            elif macd_monthly == 'alza' or stoch_condition:
-                monthly_color = 'amarillo'
-            else:
+            elif macd_hist < 0 and stoch_conditions['down'] and current_k < 85:
                 monthly_color = 'rosa'
+            else:
+                monthly_color = 'amarillo'
                 
             # Determinar color semanal
             weekly_color = 'verde' if macd_weekly == 'alza' else 'rosa'
