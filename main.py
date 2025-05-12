@@ -8,6 +8,12 @@ import os
 import subprocess
 from datetime import datetime, timedelta
 import sys
+import time
+import random
+import warnings
+
+# Suprimir el warning de urllib3
+warnings.filterwarnings('ignore', category=Warning, module='urllib3')
 
 # Configuración
 TICKERS = [
@@ -29,32 +35,69 @@ STOCH_WINDOW = 89
 STOCH_SMOOTH = 3 
 EXCEL_FILE = 'resultados.xlsx'
 
+# Configuración de reintentos y tiempos de espera
+MAX_RETRIES = 3  # Mínimo de reintentos
+BASE_DELAY = 1   # Mínimo tiempo de espera
+MAX_DELAY = 5    # Mínimo tiempo máximo
+BATCH_SIZE = 27  # Procesar todos los tickers de una vez
+INTER_BATCH_DELAY = (0, 0)  # Sin pausa entre lotes
+INTER_DOWNLOAD_DELAY = (0, 0)  # Sin pausa entre descargas
+
 # Fechas para descarga de datos
 END_DATE = datetime.now()
 START_DATE = END_DATE - timedelta(days=3650)  # 10 años
 
+# Agregar al inicio del archivo, después de los imports
+class Colors:
+    HEADER = '\033[95m'
+    BLUE = '\033[94m'
+    GREEN = '\033[92m'
+    YELLOW = '\033[93m'
+    RED = '\033[91m'
+    ENDC = '\033[0m'
+    BOLD = '\033[1m'
+    UNDERLINE = '\033[4m'
+
 def print_header():
     """Imprime un encabezado atractivo para la aplicación"""
     print("\n" + "=" * 60)
-    print("ANÁLISIS TÉCNICO DE MERCADOS".center(60))
+    print(f"{Colors.HEADER}{Colors.BOLD}ANÁLISIS TÉCNICO DE MERCADOS{Colors.ENDC}".center(60))
     print("=" * 60)
-    print(f"Fecha: {datetime.now().strftime('%d-%m-%Y %H:%M:%S')}")
-    print(f"Tickers analizados: {len(TICKERS)}")
-    print(f"Período: {START_DATE.strftime('%d-%m-%Y')} - {END_DATE.strftime('%d-%m-%Y')}")
+    print(f"{Colors.BLUE}Fecha: {datetime.now().strftime('%d-%m-%Y %H:%M:%S')}{Colors.ENDC}")
+    print(f"{Colors.BLUE}Tickers analizados: {len(TICKERS)}{Colors.ENDC}")
+    print(f"{Colors.BLUE}Período: {START_DATE.strftime('%d-%m-%Y')} - {END_DATE.strftime('%d-%m-%Y')}{Colors.ENDC}")
     print("=" * 60 + "\n")
 
+def download_data_with_retry(ticker, period):
+    """Descarga datos históricos con sistema de reintentos"""
+    for attempt in range(MAX_RETRIES):
+        try:
+            data = yf.download(
+                ticker, 
+                start=START_DATE, 
+                end=END_DATE, 
+                interval=period, 
+                auto_adjust=True,
+                progress=False,
+                threads=False
+            )
+            
+            if not data.empty:
+                return data
+            else:
+                raise Exception("DataFrame vacío")
+            
+        except Exception as e:
+            if attempt == MAX_RETRIES - 1:
+                print(f"❌ Error descargando {ticker}: {str(e)}")
+                return pd.DataFrame()
+    
+    return pd.DataFrame()
+
 def download_data(ticker, period):
-    """Descarga datos históricos para un ticker específico"""
+    """Función wrapper para la descarga de datos"""
     try:
-        data = yf.download(
-            ticker, 
-            start=START_DATE, 
-            end=END_DATE, 
-            interval=period, 
-            auto_adjust=True,
-            progress=False
-        )
-        return data
+        return download_data_with_retry(ticker, period)
     except Exception as e:
         print(f"Error descargando datos para {ticker}: {str(e)}")
         return pd.DataFrame()
@@ -62,16 +105,9 @@ def download_data(ticker, period):
 def calculate_indicators(df):
     """Calcula los indicadores técnicos para el análisis"""
     # ROC (Rate of Change) - Usando el último precio vs el precio de hace 26 períodos
-    last_price = float(df['Close'].iloc[-1])
-    prev_price = float(df['Close'].iloc[-ROC_WINDOW-1])
-    
-    # Debug prints
-    print(f"\nDebug ROC:")
-    print(f"Último precio: {last_price:.2f}")
-    print(f"Precio hace {ROC_WINDOW} períodos: {prev_price:.2f}")
+    last_price = df['Close'].iloc[-1].item()
+    prev_price = df['Close'].iloc[-ROC_WINDOW-1].item()
     roc = ((last_price - prev_price) / prev_price) * 100
-    print(f"ROC calculado: {roc:.2f}%")
-    
     df['ROC'] = roc
     
     # MACD (Moving Average Convergence Divergence)
@@ -89,7 +125,7 @@ def calculate_indicators(df):
     df['Stochastic_K'] = 100 * ((df['Close'] - low_min) / (high_max - low_min))
     
     # %D (Línea lenta - media móvil simple de %K)
-    df['Stochastic_D'] = df['Stochastic_K'].rolling(window=STOCH_SMOOTH).mean()  # SMA en lugar de EMA
+    df['Stochastic_D'] = df['Stochastic_K'].rolling(window=STOCH_SMOOTH).mean()
     
     return df
 
@@ -108,33 +144,16 @@ def calculate_trimestral_macd(df):
     df['MACD_TRI_Signal'] = df['MACD_TRI'].ewm(span=21, adjust=False, min_periods=0).mean()
     df['MACD_TRI_Hist'] = df['MACD_TRI'] - df['MACD_TRI_Signal']
     
-    # Debug: imprimir los últimos valores para verificación
-    print(f"\nÚltimos valores de EMAs trimestrales:")
-    print(f"EMA 36: {float(ema_36.iloc[-1]):.2f}")
-    print(f"EMA 78: {float(ema_78.iloc[-1]):.2f}")
-    print(f"Diferencia: {float(ema_36.iloc[-1] - ema_78.iloc[-1]):.2f}")
-    
     return df
 
 def get_trimestral_signal(df):
     """Determina si el MACD trimestral está en verde o rosa"""
     try:
-        # Obtener el último valor del MACD y su señal
-        macd = float(df['MACD_TRI'].iloc[-1])
-        signal = float(df['MACD_TRI_Signal'].iloc[-1])
-        
-        # Debug: imprimir los valores y la señal
-        print(f"\nSeñal Trimestral:")
-        print(f"MACD: {macd:.2f}")
-        print(f"Señal: {signal:.2f}")
-        print(f"Diferencia: {macd - signal:.2f}")
-        print(f"Color: {'verde' if macd > signal else 'rosa'}")
-        
-        # Verde si MACD > Señal, Rosa si MACD < Señal
+        macd = df['MACD_TRI'].iloc[-1].item()
+        signal = df['MACD_TRI_Signal'].iloc[-1].item()
         return 'verde' if macd > signal else 'rosa'
     except Exception as e:
-        print(f"Error al calcular señal trimestral: {str(e)}")
-        return 'rosa'  # Por defecto, retornamos rosa en caso de error
+        return 'rosa'
 
 def calculate_cross_macd(df):
     """Calcula las EMAs para la señal de cruce (12 y 9)"""
@@ -142,64 +161,33 @@ def calculate_cross_macd(df):
     df['EMA_12'] = df['Close'].ewm(span=12, adjust=False).mean()
     # Calcular EMA de 9 períodos (Señal)
     df['EMA_9'] = df['Close'].ewm(span=9, adjust=False).mean()
-    
-    # Debug: Imprimir los últimos valores calculados
-    print(f"\nÚltimos valores para verificación:")
-    try:
-        ema12_last = float(df['EMA_12'].iloc[-1])
-        ema12_prev = float(df['EMA_12'].iloc[-2])
-        ema9_last = float(df['EMA_9'].iloc[-1])
-        ema9_prev = float(df['EMA_9'].iloc[-2])
-        
-        print(f"EMA 12 (último): {ema12_last:.2f}")
-        print(f"EMA 12 (penúltimo): {ema12_prev:.2f}")
-        print(f"EMA 9 (último): {ema9_last:.2f}")
-        print(f"EMA 9 (penúltimo): {ema9_prev:.2f}")
-    except Exception as e:
-        print(f"Error al imprimir valores de verificación: {str(e)}")
-    
     return df
 
 def get_cross_signal(df):
     """Determina si hay un cruce de EMA 12 sobre EMA 9"""
     try:
-        # Obtener los valores necesarios
-        ema12_last = float(df['EMA_12'].iloc[-1])      # EMA12 (última DATA)
-        ema12_prev = float(df['EMA_12'].iloc[-2])      # EMA12 (penúltima DATA)
-        ema9_last = float(df['EMA_9'].iloc[-1])        # Señal (última DATA)
-        ema9_prev = float(df['EMA_9'].iloc[-2])        # Señal (penúltima DATA)
+        ema12_last = df['EMA_12'].iloc[-1].item()
+        ema12_prev = df['EMA_12'].iloc[-2].item()
+        ema9_last = df['EMA_9'].iloc[-1].item()
+        ema9_prev = df['EMA_9'].iloc[-2].item()
         
-        # Debug: Imprimir análisis detallado
-        print(f"\nAnálisis de cruce:")
-        print(f"EMA12 (penúltima DATA): {ema12_prev:.2f}")
-        print(f"EMA12 (última DATA): {ema12_last:.2f}")
-        print(f"Señal (penúltima DATA): {ema9_prev:.2f}")
-        print(f"Señal (última DATA): {ema9_last:.2f}")
-        
-        # Detectar señal azul: EMA12 (penúltima DATA) < Señal Y EMA12 (última DATA) > Señal
         if ema12_prev < ema9_prev and ema12_last > ema9_last:
-            print("¡Señal AZUL detectada! (Cruce alcista)")
             return 'azul'
-        # Detectar señal naranja: EMA12 (penúltima DATA) > Señal Y EMA12 (última DATA) < Señal
         elif ema12_prev > ema9_prev and ema12_last < ema9_last:
-            print("¡Señal NARANJA detectada! (Cruce bajista)")
             return 'naranja'
-        
-        print("No hay señal de cruce")
         return None
     except Exception as e:
-        print(f"Error al procesar señal de cruce: {str(e)}")
         return None
 
 def get_macd_signal(df):
     """Determina si MACD está cortado al alza o a la baja"""
-    return 'alza' if float(df['MACD_Hist'].iloc[-1]) > 0 else 'baja'
+    return 'alza' if df['MACD_Hist'].iloc[-1].item() > 0 else 'baja'
 
 def get_stoch_signal(df):
     """Determina las condiciones del Estocástico"""
     try:
-        current_k = float(df['Stochastic_K'].iloc[-1])
-        current_d = float(df['Stochastic_D'].iloc[-1])
+        current_k = df['Stochastic_K'].iloc[-1].item()
+        current_d = df['Stochastic_D'].iloc[-1].item()
         
         # Verificar si SK>%D
         stoch_condition_up = current_k > current_d
@@ -227,8 +215,6 @@ def get_resource_path(relative_path):
 
 def export_to_excel(df):
     """Exporta los resultados a Excel con formato de color"""
-    print("Generando archivo Excel con resultados...")
-    
     # Obtener la ruta del directorio del ejecutable
     if getattr(sys, 'frozen', False):
         # Si es un ejecutable
@@ -321,7 +307,6 @@ def export_to_excel(df):
             cell_senal.fill = azul
         elif data['Señal'] == 'naranja':
             cell_senal.fill = naranja
-        # Si no hay señal, se queda en blanco
     
     # Ajustar el ancho de las columnas
     for column in ws.columns:
@@ -353,110 +338,109 @@ def export_to_excel(df):
     
     # Abrir el archivo Excel automáticamente
     try:
-        print("Abriendo archivo Excel...")
         if os.name == 'nt':  # Windows
             os.startfile(excel_path)
         elif os.name == 'posix':  # macOS o Linux
             if os.uname().sysname == 'Darwin':  # macOS
-                subprocess.call(['open', excel_path])
+                subprocess.run(['open', excel_path], capture_output=True, text=True)
             else:  # Linux
-                subprocess.call(['xdg-open', excel_path])
-        print("✓ Archivo Excel abierto correctamente")
-    except Exception as e:
-        print(f"No se pudo abrir el archivo Excel automáticamente: {str(e)}")
-        print(f"El archivo se ha guardado en: {os.path.abspath(excel_path)}")
+                subprocess.run(['xdg-open', excel_path], capture_output=True, text=True)
+    except Exception:
+        pass  # Silenciar cualquier error al abrir el archivo
+
+def format_roc(roc_value):
+    """Formatea el valor ROC con color según sea positivo o negativo"""
+    if roc_value > 0:
+        return f"{Colors.GREEN}{roc_value:.2f}%{Colors.ENDC}"
+    else:
+        return f"{Colors.RED}{roc_value:.2f}%{Colors.ENDC}"
+
+def format_signal(signal):
+    """Formatea la señal con color según su valor"""
+    if signal == 'verde':
+        return f"{Colors.GREEN}V{Colors.ENDC}"
+    elif signal == 'rosa':
+        return f"{Colors.RED}R{Colors.ENDC}"
+    elif signal == 'amarillo':
+        return f"{Colors.YELLOW}A{Colors.ENDC}"
+    elif signal == 'azul':
+        return f"{Colors.BLUE}A{Colors.ENDC}"
+    elif signal == 'naranja':
+        return f"{Colors.YELLOW}N{Colors.ENDC}"
+    return signal
 
 def main():
     """Función principal del programa"""
-    # Mostrar encabezado
     print_header()
-    
-    # Inicializar lista de resultados
     results = []
     
-    # Procesar cada ticker
-    print("Iniciando análisis de tickers...")
-    
-    total_tickers = len(TICKERS)
-    for i, ticker in enumerate(TICKERS, 1):
-        try:
-            # Mostrar progreso
-            print(f"Procesando {ticker} ({i}/{total_tickers})...")
-            
-            # Descargar datos semanales y mensuales
-            weekly_data = download_data(ticker, '1wk')
-            monthly_data = download_data(ticker, '1mo')
-            
-            if weekly_data.empty or monthly_data.empty:
-                print(f"No se pudieron obtener datos para {ticker}")
+    for i in range(0, len(TICKERS), BATCH_SIZE):
+        batch = TICKERS[i:i + BATCH_SIZE]
+        
+        for ticker in batch:
+            try:
+                current_index = TICKERS.index(ticker) + 1
+                weekly_data = download_data(ticker, '1wk')
+                if not weekly_data.empty:
+                    monthly_data = download_data(ticker, '1mo')
+                    if monthly_data.empty:
+                        continue
+                    weekly_data = calculate_indicators(weekly_data)
+                    monthly_data = calculate_indicators(monthly_data)
+                    monthly_data = calculate_trimestral_macd(monthly_data)
+                    weekly_data = calculate_cross_macd(weekly_data)
+                    roc_value = weekly_data['ROC'].iloc[-1]
+                    macd_hist = monthly_data['MACD_Hist'].iloc[-1].item()
+                    stoch_conditions = get_stoch_signal(monthly_data)
+                    macd_weekly = get_macd_signal(weekly_data)
+                    trimestral_signal = get_trimestral_signal(monthly_data)
+                    cross_signal = get_cross_signal(weekly_data)
+                    monthly_color = 'verde' if macd_hist > 0 else 'rosa'
+                    weekly_color = 'verde' if macd_weekly == 'alza' else 'rosa'
+                    
+                    # Formatear la salida con colores
+                    print(f"[{current_index}/{len(TICKERS)}] {Colors.BOLD}{ticker}{Colors.ENDC} | ROC: {format_roc(roc_value)} | T: {format_signal(trimestral_signal)} | M: {format_signal(monthly_color)} | S: {format_signal(weekly_color)} | Señal: {format_signal(cross_signal) if cross_signal else '-'}")
+                    
+                    results.append({
+                        'Ticker': ticker,
+                        'ROC': round(roc_value, 2) if not np.isnan(roc_value) else 0,
+                        'Mensual': monthly_color,
+                        'Semanal': weekly_color,
+                        'Trimestral': trimestral_signal,
+                        'Señal': cross_signal
+                    })
+            except Exception:
                 continue
-            
-            # Calcular indicadores
-            weekly_data = calculate_indicators(weekly_data)
-            monthly_data = calculate_indicators(monthly_data)
-            monthly_data = calculate_trimestral_macd(monthly_data)
-            weekly_data = calculate_cross_macd(weekly_data)
-            
-            # Obtener señales
-            roc_value = weekly_data['ROC'].iloc[-1]
-            macd_hist = float(monthly_data['MACD_Hist'].iloc[-1])
-            stoch_conditions = get_stoch_signal(monthly_data)
-            current_k = stoch_conditions.get('current_k', 0)
-            macd_weekly = get_macd_signal(weekly_data)
-            trimestral_signal = get_trimestral_signal(monthly_data)
-            cross_signal = get_cross_signal(weekly_data)
-            
-            # Determinar color mensual
-            monthly_color = 'verde' if macd_hist > 0 else 'rosa'
-                
-            # Determinar color semanal
-            weekly_color = 'verde' if macd_weekly == 'alza' else 'rosa'
-            
-            # Agregar resultados
-            results.append({
-                'Ticker': ticker,
-                'ROC': round(roc_value, 2) if not np.isnan(roc_value) else 0,
-                'Mensual': monthly_color,
-                'Semanal': weekly_color,
-                'Trimestral': trimestral_signal,
-                'Señal': cross_signal
-            })
-            
-        except Exception as e:
-            print(f"Error procesando {ticker}: {str(e)}")
-            continue
-    
-    # Verificar si hay resultados
+
     if not results:
-        print("No se pudieron procesar datos para ningún ticker")
+        print(f"{Colors.RED}No se pudieron procesar datos para ningún ticker{Colors.ENDC}")
         return
-    
-    # Crear DataFrame y ordenar por ROC
+
     df_results = pd.DataFrame(results)
     df_results = df_results.sort_values('ROC', ascending=False)
     
-    # Mostrar resumen de resultados
-    print("\nResumen de resultados:")
-    print(f"✓ Tickers procesados: {len(df_results)}/{len(TICKERS)}")
-    print(f"✓ Mayor ROC: {df_results['ROC'].max():.2f}% ({df_results.iloc[0]['Ticker']})")
-    print(f"✓ Menor ROC: {df_results['ROC'].min():.2f}% ({df_results.iloc[-1]['Ticker']})")
+    # Cálculos adicionales
+    roc_mean = df_results['ROC'].mean()
+    roc_std = df_results['ROC'].std()
+    positive_tickers = len(df_results[df_results['ROC'] > 0])
+    negative_tickers = len(df_results[df_results['ROC'] <= 0])
+    positive_percentage = (positive_tickers / len(df_results)) * 100
     
-    # Exportar a Excel con formato
+    # Imprimir resumen mejorado con colores
+    print(f"\n{Colors.BOLD}Resumen:{Colors.ENDC} Procesados: {len(df_results)}/{len(TICKERS)} | Mayor ROC: {format_roc(df_results['ROC'].max())} ({df_results.iloc[0]['Ticker']}) | Menor ROC: {format_roc(df_results['ROC'].min())} ({df_results.iloc[-1]['Ticker']})")
+    print(f"{Colors.BOLD}Estadísticas:{Colors.ENDC} Media ROC: {format_roc(roc_mean)} | Volatilidad: {Colors.YELLOW}{roc_std:.2f}%{Colors.ENDC} | Positivos: {Colors.GREEN}{positive_percentage:.1f}%{Colors.ENDC} ({positive_tickers}/{len(df_results)})")
+    
     try:
         export_to_excel(df_results)
-        print(f"\n✓ Resultados guardados en '{EXCEL_FILE}'")
-    except Exception as e:
-        print(f"Error guardando el archivo Excel: {str(e)}")
-    
-    print("\n" + "¡ANÁLISIS COMPLETADO!".center(60))
-    print("=" * 60 + "\n")
+    except Exception:
+        pass
 
 if __name__ == "__main__":
     try:
         main()
     except KeyboardInterrupt:
-        print("\nProceso interrumpido por el usuario")
+        print(f"\n{Colors.YELLOW}Proceso interrumpido por el usuario{Colors.ENDC}")
     except Exception as e:
-        print(f"\nError inesperado: {str(e)}")
+        print(f"\n{Colors.RED}Error inesperado: {str(e)}{Colors.ENDC}")
     finally:
-        print("Fin del programa") 
+        print(f"\n{Colors.BLUE}Fin del programa{Colors.ENDC}") 
