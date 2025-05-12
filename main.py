@@ -276,10 +276,13 @@ def export_to_excel(df):
         
         # ROC
         roc_cell = ws.cell(row=row, column=2, value=data['ROC'])
-        if data['ROC'] > 0:
-            roc_cell.font = openpyxl.styles.Font(color="006100")  # Verde oscuro
+        if isinstance(data['ROC'], (int, float)):
+            if data['ROC'] > 0:
+                roc_cell.font = openpyxl.styles.Font(color="006100")  # Verde oscuro
+            else:
+                roc_cell.font = openpyxl.styles.Font(color="9C0006")  # Rojo oscuro
         else:
-            roc_cell.font = openpyxl.styles.Font(color="9C0006")  # Rojo oscuro
+            roc_cell.font = openpyxl.styles.Font(color="000000")  # Negro para texto
         
         # Trimestral (aplicar color)
         cell_trimestral = ws.cell(row=row, column=3)
