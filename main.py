@@ -85,11 +85,14 @@ def download_data_with_retry(ticker, period):
             if not data.empty:
                 return data
             else:
-                raise Exception("DataFrame vacío")
+                if ticker == 'IBIT':
+                    print(f"⚠️ No hay datos disponibles para {ticker}")
+                return pd.DataFrame()
             
         except Exception as e:
             if attempt == MAX_RETRIES - 1:
-                print(f"❌ Error descargando {ticker}: {str(e)}")
+                if ticker == 'IBIT':
+                    print(f"❌ Error descargando {ticker}: {str(e)}")
                 return pd.DataFrame()
     
     return pd.DataFrame()
@@ -373,6 +376,7 @@ def main():
     """Función principal del programa"""
     print_header()
     results = []
+    mensaje_sin_datos = 'Sin datos históricos suficientes'
     
     for i in range(0, len(TICKERS), BATCH_SIZE):
         batch = TICKERS[i:i + BATCH_SIZE]
@@ -384,6 +388,16 @@ def main():
                 if not weekly_data.empty:
                     monthly_data = download_data(ticker, '1mo')
                     if monthly_data.empty:
+                        results.append({
+                            'Ticker': ticker,
+                            'ROC': mensaje_sin_datos,
+                            'Mensual': mensaje_sin_datos,
+                            'Semanal': mensaje_sin_datos,
+                            'Trimestral': mensaje_sin_datos,
+                            'Señal': mensaje_sin_datos
+                        })
+                        if ticker == 'IBIT':
+                            print(f"⚠️ No hay datos mensuales disponibles para {ticker}")
                         continue
                     weekly_data = calculate_indicators(weekly_data)
                     monthly_data = calculate_indicators(monthly_data)
@@ -409,7 +423,28 @@ def main():
                         'Trimestral': trimestral_signal,
                         'Señal': cross_signal
                     })
-            except Exception:
+                else:
+                    results.append({
+                        'Ticker': ticker,
+                        'ROC': mensaje_sin_datos,
+                        'Mensual': mensaje_sin_datos,
+                        'Semanal': mensaje_sin_datos,
+                        'Trimestral': mensaje_sin_datos,
+                        'Señal': mensaje_sin_datos
+                    })
+                    if ticker == 'IBIT':
+                        print(f"⚠️ No hay datos disponibles para {ticker}")
+            except Exception as e:
+                results.append({
+                    'Ticker': ticker,
+                    'ROC': mensaje_sin_datos,
+                    'Mensual': mensaje_sin_datos,
+                    'Semanal': mensaje_sin_datos,
+                    'Trimestral': mensaje_sin_datos,
+                    'Señal': mensaje_sin_datos
+                })
+                if ticker == 'IBIT':
+                    print(f"❌ Error procesando {ticker}: Faltan datos históricos suficientes")
                 continue
 
     if not results:
@@ -417,23 +452,32 @@ def main():
         return
 
     df_results = pd.DataFrame(results)
-    df_results = df_results.sort_values('ROC', ascending=False)
     
-    # Cálculos adicionales
-    roc_mean = df_results['ROC'].mean()
-    roc_std = df_results['ROC'].std()
-    positive_tickers = len(df_results[df_results['ROC'] > 0])
-    negative_tickers = len(df_results[df_results['ROC'] <= 0])
-    positive_percentage = (positive_tickers / len(df_results)) * 100
+    # Separar los resultados en numéricos y no numéricos
+    df_numeric = df_results[df_results['ROC'].apply(lambda x: isinstance(x, (int, float)))]
+    df_non_numeric = df_results[~df_results['ROC'].apply(lambda x: isinstance(x, (int, float)))]
+    
+    # Ordenar solo los resultados numéricos
+    df_numeric = df_numeric.sort_values('ROC', ascending=False)
+    
+    # Concatenar los resultados ordenados
+    df_results = pd.concat([df_numeric, df_non_numeric])
+    
+    # Cálculos adicionales solo con datos válidos
+    valid_roc = df_numeric['ROC']
+    roc_mean = valid_roc.mean() if not valid_roc.empty else 0
+    roc_std = valid_roc.std() if not valid_roc.empty else 0
+    positive_tickers = len(valid_roc[valid_roc > 0])
+    positive_percentage = (positive_tickers / len(valid_roc)) * 100 if not valid_roc.empty else 0
     
     # Imprimir resumen mejorado con colores
-    print(f"\n{Colors.BOLD}Resumen:{Colors.ENDC} Procesados: {len(df_results)}/{len(TICKERS)} | Mayor ROC: {format_roc(df_results['ROC'].max())} ({df_results.iloc[0]['Ticker']}) | Menor ROC: {format_roc(df_results['ROC'].min())} ({df_results.iloc[-1]['Ticker']})")
-    print(f"{Colors.BOLD}Estadísticas:{Colors.ENDC} Media ROC: {format_roc(roc_mean)} | Volatilidad: {Colors.YELLOW}{roc_std:.2f}%{Colors.ENDC} | Positivos: {Colors.GREEN}{positive_percentage:.1f}%{Colors.ENDC} ({positive_tickers}/{len(df_results)})")
+    print(f"\n{Colors.BOLD}Resumen:{Colors.ENDC} Procesados: {len(valid_roc)}/{len(TICKERS)} | Mayor ROC: {format_roc(valid_roc.max()) if not valid_roc.empty else 'N/A'} | Menor ROC: {format_roc(valid_roc.min()) if not valid_roc.empty else 'N/A'}")
+    print(f"{Colors.BOLD}Estadísticas:{Colors.ENDC} Media ROC: {format_roc(roc_mean)} | Volatilidad: {Colors.YELLOW}{roc_std:.2f}%{Colors.ENDC} | Positivos: {Colors.GREEN}{positive_percentage:.1f}%{Colors.ENDC} ({positive_tickers}/{len(valid_roc)})")
     
     try:
         export_to_excel(df_results)
-    except Exception:
-        pass
+    except Exception as e:
+        print(f"{Colors.RED}Error al exportar a Excel: {str(e)}{Colors.ENDC}")
 
 if __name__ == "__main__":
     try:
