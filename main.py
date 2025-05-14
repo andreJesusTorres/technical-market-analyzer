@@ -171,29 +171,21 @@ def calculate_cross_macd(df):
     df['EMA_9'] = macd.ewm(span=9, adjust=False).mean()
     return df
 
-def get_last_cross_signal(df, lookback=5):
+def get_last_cross_signal(df):
     """
-    Devuelve la última señal de cruce (azul/naranja) SOLO si ocurrió en las últimas 'lookback' velas.
-    Si no hay cruce reciente, devuelve None.
+    Devuelve la última señal de cruce (azul/naranja) SOLO si ocurrió en la ÚLTIMA vela.
+    Si no hay cruce en la última vela, devuelve None.
     """
-    last_signal = None
-    last_cross_index = None
-    for i in range(len(df) - 1, 0, -1):
-        ema12_last = df['EMA_12'].iloc[i]
-        ema12_prev = df['EMA_12'].iloc[i - 1]
-        ema9_last = df['EMA_9'].iloc[i]
-        ema9_prev = df['EMA_9'].iloc[i - 1]
-        if ema12_prev < ema9_prev and ema12_last > ema9_last:
-            last_signal = 'azul'
-            last_cross_index = i
-            break
-        elif ema12_prev > ema9_prev and ema12_last < ema9_last:
-            last_signal = 'naranja'
-            last_cross_index = i
-            break
-    # Solo devuelve la señal si el cruce fue en las últimas 'lookback' velas
-    if last_cross_index is not None and last_cross_index >= len(df) - lookback:
-        return last_signal
+    if len(df) < 2:
+        return None
+    ema12_last = df['EMA_12'].iloc[-1]
+    ema12_prev = df['EMA_12'].iloc[-2]
+    ema9_last = df['EMA_9'].iloc[-1]
+    ema9_prev = df['EMA_9'].iloc[-2]
+    if ema12_prev < ema9_prev and ema12_last > ema9_last:
+        return 'azul'
+    elif ema12_prev > ema9_prev and ema12_last < ema9_last:
+        return 'naranja'
     else:
         return None
 
@@ -438,7 +430,10 @@ def main():
                     weekly_data = calculate_cross_macd(weekly_data)
                     roc_value = weekly_data['ROC'].iloc[-1]
                     monthly_color = get_macd_signal(monthly_data)
-                    weekly_color = 'verde' if weekly_data['MACD_Hist'].iloc[-1].item() > 0 else 'rosa'
+                    # MACD semanal: Verde si MACD > Señal, Rosa si MACD < Señal
+                    macd_week = weekly_data['MACD'].iloc[-1].item()
+                    signal_week = weekly_data['MACD_Signal'].iloc[-1].item()
+                    weekly_color = 'verde' if macd_week > signal_week else 'rosa'
                     trimestral_signal = get_trimestral_signal(monthly_data)
                     cross_signal = get_last_cross_signal(weekly_data)
                     
