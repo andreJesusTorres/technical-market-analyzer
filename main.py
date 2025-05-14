@@ -171,9 +171,13 @@ def calculate_cross_macd(df):
     df['EMA_9'] = macd.ewm(span=9, adjust=False).mean()
     return df
 
-def get_last_cross_signal(df):
-    """Devuelve la última señal de cruce (azul/naranja) y la mantiene hasta que ocurra el contrario."""
+def get_last_cross_signal(df, lookback=5):
+    """
+    Devuelve la última señal de cruce (azul/naranja) SOLO si ocurrió en las últimas 'lookback' velas.
+    Si no hay cruce reciente, devuelve None.
+    """
     last_signal = None
+    last_cross_index = None
     for i in range(len(df) - 1, 0, -1):
         ema12_last = df['EMA_12'].iloc[i]
         ema12_prev = df['EMA_12'].iloc[i - 1]
@@ -181,11 +185,17 @@ def get_last_cross_signal(df):
         ema9_prev = df['EMA_9'].iloc[i - 1]
         if ema12_prev < ema9_prev and ema12_last > ema9_last:
             last_signal = 'azul'
+            last_cross_index = i
             break
         elif ema12_prev > ema9_prev and ema12_last < ema9_last:
             last_signal = 'naranja'
+            last_cross_index = i
             break
-    return last_signal
+    # Solo devuelve la señal si el cruce fue en las últimas 'lookback' velas
+    if last_cross_index is not None and last_cross_index >= len(df) - lookback:
+        return last_signal
+    else:
+        return None
 
 def get_macd_signal(df):
     """Determina si MACD está cortado al alza o a la baja"""
@@ -269,10 +279,10 @@ def export_to_excel(df):
     )  # Rosa claro
     azul = openpyxl.styles.PatternFill(
         start_color="87CEEB", end_color="87CEEB", fill_type="solid"
-    )  # Azul claro
+    )  # Azul cielo para cruce alcista
     naranja = openpyxl.styles.PatternFill(
         start_color="FFA500", end_color="FFA500", fill_type="solid"
-    )  # Naranja
+    )  # Naranja para cruce bajista
     
     # Escribir los datos y aplicar colores
     for row, (_, data) in enumerate(df.iterrows(), 2):
@@ -315,9 +325,9 @@ def export_to_excel(df):
         # Señal (aplicar color)
         cell_senal = ws.cell(row=row, column=6)
         if data['Señal'] == 'azul':
-            cell_senal.fill = azul
+            cell_senal.fill = azul  # Azul cielo para cruce alcista
         elif data['Señal'] == 'naranja':
-            cell_senal.fill = naranja
+            cell_senal.fill = naranja  # Naranja para cruce bajista
     
     # Ajustar el ancho de las columnas
     for column in ws.columns:
