@@ -35,7 +35,7 @@ ENV/
 Thumbs.db
 
 # Project specific
-*.spec
+# *.spec
 *.exe
 resultados.xlsx
 *.pdf
