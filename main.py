@@ -430,10 +430,8 @@ def main():
                     weekly_data = calculate_cross_macd(weekly_data)
                     roc_value = weekly_data['ROC'].iloc[-1]
                     monthly_color = get_macd_signal(monthly_data)
-                    # MACD semanal: Verde si MACD > Señal, Rosa si MACD < Señal
-                    macd_week = weekly_data['MACD'].iloc[-1].item()
-                    signal_week = weekly_data['MACD_Signal'].iloc[-1].item()
-                    weekly_color = 'verde' if macd_week > signal_week else 'rosa'
+                    # MACD semanal con la misma lógica que el mensual
+                    weekly_color = get_macd_signal(weekly_data)
                     trimestral_signal = get_trimestral_signal(monthly_data)
                     cross_signal = get_last_cross_signal(weekly_data)
                     
