@@ -171,23 +171,21 @@ def calculate_cross_macd(df):
     df['EMA_9'] = macd.ewm(span=9, adjust=False).mean()
     return df
 
-def get_cross_signal(df):
-    """Determina si hay un cruce de EMA 12 sobre EMA 9 del MACD"""
-    try:
-        ema12_last = df['EMA_12'].iloc[-1].item()
-        ema12_prev = df['EMA_12'].iloc[-2].item()
-        ema9_last = df['EMA_9'].iloc[-1].item()
-        ema9_prev = df['EMA_9'].iloc[-2].item()
-        
-        # Cruce alcista: EMA 12 cruza por encima de EMA 9
+def get_last_cross_signal(df):
+    """Devuelve la última señal de cruce (azul/naranja) y la mantiene hasta que ocurra el contrario."""
+    last_signal = None
+    for i in range(len(df) - 1, 0, -1):
+        ema12_last = df['EMA_12'].iloc[i]
+        ema12_prev = df['EMA_12'].iloc[i - 1]
+        ema9_last = df['EMA_9'].iloc[i]
+        ema9_prev = df['EMA_9'].iloc[i - 1]
         if ema12_prev < ema9_prev and ema12_last > ema9_last:
-            return 'azul'
-        # Cruce bajista: EMA 12 cruza por debajo de EMA 9
+            last_signal = 'azul'
+            break
         elif ema12_prev > ema9_prev and ema12_last < ema9_last:
-            return 'naranja'
-        return None
-    except Exception as e:
-        return None
+            last_signal = 'naranja'
+            break
+    return last_signal
 
 def get_macd_signal(df):
     """Determina si MACD está cortado al alza o a la baja"""
@@ -418,7 +416,7 @@ def main():
                     stoch_conditions = get_stoch_signal(monthly_data)
                     macd_weekly = get_macd_signal(weekly_data)
                     trimestral_signal = get_trimestral_signal(monthly_data)
-                    cross_signal = get_cross_signal(weekly_data)
+                    cross_signal = get_last_cross_signal(weekly_data)
                     monthly_color = 'verde' if macd_hist > 0 else 'rosa'
                     weekly_color = 'verde' if macd_weekly == 'alza' else 'rosa'
                     
