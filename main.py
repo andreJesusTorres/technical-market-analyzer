@@ -31,8 +31,6 @@ MACD_SIGNAL = 9
 MACD_TRI_FAST = 36
 MACD_TRI_SLOW = 78
 MACD_TRI_SIGNAL = 21
-STOCH_WINDOW = 89
-STOCH_SMOOTH = 3 
 EXCEL_FILE = 'resultados.xlsx'
 
 # Configuración de reintentos y tiempos de espera
@@ -120,16 +118,6 @@ def calculate_indicators(df):
     df['MACD_Signal'] = df['MACD'].ewm(span=MACD_SIGNAL, adjust=False).mean()
     df['MACD_Hist'] = df['MACD'] - df['MACD_Signal']
     
-    # Stochastic Oscillator
-    low_min = df['Low'].rolling(window=STOCH_WINDOW).min()
-    high_max = df['High'].rolling(window=STOCH_WINDOW).max()
-    
-    # %K (Línea rápida)
-    df['Stochastic_K'] = 100 * ((df['Close'] - low_min) / (high_max - low_min))
-    
-    # %D (Línea lenta - media móvil simple de %K)
-    df['Stochastic_D'] = df['Stochastic_K'].rolling(window=STOCH_SMOOTH).mean()
-    
     return df
 
 def calculate_trimestral_macd(df):
@@ -205,39 +193,17 @@ def get_macd_signal(df):
     try:
         macd = df['MACD'].iloc[-1].item()
         signal = df['MACD_Signal'].iloc[-1].item()
-        stoch_k = df['Stochastic_K'].iloc[-1].item()
-        stoch_d = df['Stochastic_D'].iloc[-1].item()
         
         # Condiciones para el MACD Mensual
-        if macd > signal and (stoch_k > stoch_d or stoch_k > 85):
+        if macd > signal:
             return 'verde'
-        elif macd < signal and (stoch_k < stoch_d and stoch_k < 85):
+        elif macd < signal:
             return 'rosa'
         else:
             return 'amarillo'
     except Exception as e:
         print(f"Error al calcular señal MACD: {str(e)}")
         return 'rosa'
-
-def get_stoch_signal(df):
-    """Determina las condiciones del Estocástico"""
-    try:
-        current_k = df['Stochastic_K'].iloc[-1].item()
-        current_d = df['Stochastic_D'].iloc[-1].item()
-        
-        # Verificar si SK>%D
-        stoch_condition_up = current_k > current_d
-        # Verificar si SK<%D
-        stoch_condition_down = current_k < current_d
-        
-        return {
-            'up': stoch_condition_up,
-            'down': stoch_condition_down,
-            'current_k': current_k
-        }
-    except Exception as e:
-        print(f"Error al calcular señal estocástica: {str(e)}")
-        return {'up': False, 'down': False, 'current_k': 0}
 
 def get_resource_path(relative_path):
     """Obtiene la ruta absoluta para recursos empaquetados"""
