@@ -199,7 +199,22 @@ def get_last_cross_signal(df, lookback=5):
 
 def get_macd_signal(df):
     """Determina si MACD está cortado al alza o a la baja"""
-    return 'alza' if df['MACD_Hist'].iloc[-1].item() > 0 else 'baja'
+    try:
+        macd = df['MACD'].iloc[-1].item()
+        signal = df['MACD_Signal'].iloc[-1].item()
+        stoch_k = df['Stochastic_K'].iloc[-1].item()
+        stoch_d = df['Stochastic_D'].iloc[-1].item()
+        
+        # Condiciones para el MACD Mensual
+        if macd > signal and (stoch_k > stoch_d or stoch_k > 85):
+            return 'verde'
+        elif macd < signal and (stoch_k < stoch_d and stoch_k < 85):
+            return 'rosa'
+        else:
+            return 'amarillo'
+    except Exception as e:
+        print(f"Error al calcular señal MACD: {str(e)}")
+        return 'rosa'
 
 def get_stoch_signal(df):
     """Determina las condiciones del Estocástico"""
@@ -422,13 +437,10 @@ def main():
                     monthly_data = calculate_trimestral_macd(monthly_data)
                     weekly_data = calculate_cross_macd(weekly_data)
                     roc_value = weekly_data['ROC'].iloc[-1]
-                    macd_hist = monthly_data['MACD_Hist'].iloc[-1].item()
-                    stoch_conditions = get_stoch_signal(monthly_data)
-                    macd_weekly = get_macd_signal(weekly_data)
+                    monthly_color = get_macd_signal(monthly_data)
+                    weekly_color = 'verde' if weekly_data['MACD_Hist'].iloc[-1].item() > 0 else 'rosa'
                     trimestral_signal = get_trimestral_signal(monthly_data)
                     cross_signal = get_last_cross_signal(weekly_data)
-                    monthly_color = 'verde' if macd_hist > 0 else 'rosa'
-                    weekly_color = 'verde' if macd_weekly == 'alza' else 'rosa'
                     
                     # Formatear la salida con colores
                     print(f"[{current_index}/{len(TICKERS)}] {Colors.BOLD}{ticker}{Colors.ENDC} | ROC: {format_roc(roc_value)} | T: {format_signal(trimestral_signal)} | M: {format_signal(monthly_color)} | S: {format_signal(weekly_color)} | Señal: {format_signal(cross_signal) if cross_signal else '-'}")
