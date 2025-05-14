@@ -159,23 +159,30 @@ def get_trimestral_signal(df):
         return 'rosa'
 
 def calculate_cross_macd(df):
-    """Calcula las EMAs para la señal de cruce (12 y 9)"""
-    # Calcular EMA de 12 períodos
-    df['EMA_12'] = df['Close'].ewm(span=12, adjust=False).mean()
-    # Calcular EMA de 9 períodos (Señal)
-    df['EMA_9'] = df['Close'].ewm(span=9, adjust=False).mean()
+    """Calcula las EMAs para la señal de cruce basadas en el MACD"""
+    # Calcular MACD
+    exp1 = df['Close'].ewm(span=MACD_FAST, adjust=False).mean()
+    exp2 = df['Close'].ewm(span=MACD_SLOW, adjust=False).mean()
+    macd = exp1 - exp2
+    
+    # Calcular EMA de 12 períodos del MACD
+    df['EMA_12'] = macd.ewm(span=12, adjust=False).mean()
+    # Calcular EMA de 9 períodos del MACD (Señal)
+    df['EMA_9'] = macd.ewm(span=9, adjust=False).mean()
     return df
 
 def get_cross_signal(df):
-    """Determina si hay un cruce de EMA 12 sobre EMA 9"""
+    """Determina si hay un cruce de EMA 12 sobre EMA 9 del MACD"""
     try:
         ema12_last = df['EMA_12'].iloc[-1].item()
         ema12_prev = df['EMA_12'].iloc[-2].item()
         ema9_last = df['EMA_9'].iloc[-1].item()
         ema9_prev = df['EMA_9'].iloc[-2].item()
         
+        # Cruce alcista: EMA 12 cruza por encima de EMA 9
         if ema12_prev < ema9_prev and ema12_last > ema9_last:
             return 'azul'
+        # Cruce bajista: EMA 12 cruza por debajo de EMA 9
         elif ema12_prev > ema9_prev and ema12_last < ema9_last:
             return 'naranja'
         return None
